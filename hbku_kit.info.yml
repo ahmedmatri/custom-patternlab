@@ -1,0 +1,25 @@
+name: hbku_kit
+description: A theme with modern tooling.
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: stable
+
+regions:
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+
+libraries:
+  - core/normalize
+  # - hbku_kit/global
+  # - hbku_kit/tailwind
+
+components:
+  namespaces:
+    atoms: components/atoms
+    molecules: components/molecules
+    organisms: components/organisms
+    templates: components/templates
+    pages: components/pages
