@@ -4,7 +4,7 @@ const sort = require('sort-stream');
 module.exports = (gulp) => {
   gulp.task('inject:js', () => {
     const target = gulp.src('patternlab/_meta/js.twig');
-    const sources = gulp.src(['dist/components/**/*.js'], { read: false });
+    const sources = gulp.src(['dist/components/**/jquery.min.js','dist/components/**/*{global-,bundle.}min.js','dist/components/**/slick.js'], { read: false });
 
     return target
       .pipe(

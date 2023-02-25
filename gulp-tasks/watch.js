@@ -6,12 +6,12 @@ module.exports = (gulp, config) => {
     );
   });
 
-  gulp.task('watch:ts', () => {
+  gulp.task('watch:js', () => {
     gulp.watch(
-      ...config.ts.source,
-      gulp.series('lint:eslint', 'ts', 'inject:js'),
+      ...config.js.source,
+      gulp.series('concat','inject:js'),
     );
   });
 
-  gulp.task('watch', gulp.series('default', gulp.parallel('pl:serve', 'watch:scss', 'watch:ts')));
+  gulp.task('watch', gulp.series('default', gulp.parallel('pl:serve', 'watch:scss', 'watch:js')));
 };

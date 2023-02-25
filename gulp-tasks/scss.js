@@ -7,10 +7,13 @@ const sourcemaps = require('gulp-sourcemaps');
 const tailwind = require('tailwindcss');
 
 const postCSSOptions = [autoprefixer(), tailwind()];
+// const rtl = require('postcss-rtlcss');
 if (process.browser) {
   const bootstrap = require('bootstrap');
   // code is running in a browser environment
 }
+// postCSSOptions.push(rtl());
+
 module.exports = (gulp, config) => {
   gulp.task('scss', () =>
     gulp

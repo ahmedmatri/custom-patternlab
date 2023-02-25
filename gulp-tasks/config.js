@@ -10,9 +10,25 @@ module.exports = {
       importer: require('node-sass-globbing'),
     },
   },
-  ts: {
-    source: ['components/**/*.ts'],
-    destination: 'dist/components',
+  js: {
+    source: ['components/**/[^_]*.js'],
+    destination: 'dist/components/',
+  },
+  jquery: {
+    source: 'node_modules/jquery/dist/jquery.min.js',
+    destination: 'dist/components/assets/js/',
+  },
+  fonts: {
+    source: 'node_modules/@fortawesome/fontawesome-free/**/*.{css,ttf,woff,woff2}',
+    destination: 'dist/components/assets',
+  },
+  bootstrap: {
+    source: 'node_modules/bootstrap/dist/{js,css}/{bootstrap.bundle.min.js*,bootstrap.min.css*}',
+    destination: 'dist/components/assets',
+  },
+  slick: {
+    source: 'node_modules/slick-slider/slick/slick.{js,css}',
+    destination: 'dist/components/assets/slick',
   },
   svg: {
     source: ['svg/**/*.svg'],
