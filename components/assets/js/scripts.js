@@ -1,4 +1,3 @@
-alert('hi');
 /* vertical tabs 2 js start here */
 
 if ($(".verticaltabs2").length > 0) {

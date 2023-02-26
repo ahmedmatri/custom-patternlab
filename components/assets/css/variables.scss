@@ -130,7 +130,7 @@ $table-hover-bg-factor: 0.075 !default;
 $table-hover-bg: rgba($black, $table-hover-bg-factor) !default;
 
 $table-border-factor: 0.1 !default;
-$table-border-width: $border-width !default;
+// $table-border-width: $border-width !default;
 $table-border-color: var(--#{$prefix}border-color) !default;
 
 $table-striped-order: odd !default;
@@ -167,7 +167,7 @@ $input-btn-padding-y-lg: 0.5rem !default;
 $input-btn-padding-x-lg: 1rem !default;
 $input-btn-font-size-lg: $font-size-lg !default;
 
-$input-btn-border-width: $border-width !default;
+// $input-btn-border-width: $border-width !default;
 
 // scss-docs-end input-btn-variables
 

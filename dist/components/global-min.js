@@ -1,1 +1,1 @@
-$(".slider").slick({slidesToShow:3,slidesToScroll:3,dots:!0,infinite:!0,cssEase:"linear"});
+alert("hi"),$(".verticaltabs2").length>0&&$(function(){$(".verticaltabs2 #tab-links li a").click(function(a){var t=$(this);a.preventDefault(),$(".verticaltabs2 #tab-links a.active, .verticaltabs2 .verticaltabs2__cont.active").removeClass("active"),t.addClass("active"),$(t.attr("href")).addClass("active")})});

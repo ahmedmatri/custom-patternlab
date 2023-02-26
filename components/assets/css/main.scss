@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 .col-row {
   padding: 0;
   margin-bottom: 2rem;
@@ -347,3 +353,127 @@ p,
     display: none !important;
   }
 }
+
+/*======= entityTab css start here =======*/
+.pl-c-logo {
+  display: none !important;
+}
+.entityTab {
+  nav {
+    width: auto;
+    display: inline-block;
+    .nav-tabs {
+      border-top: 1px solid #dee2e6;
+      border-bottom: none;
+      border-radius: 0 6px 0 0;
+      .nav-link {
+        font-size: 2rem;
+        padding: 1.5rem 3rem;
+        color: rgba(30, 22, 86, 0.2);
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        border-color: #e1e2e9;
+        border-top: none;
+        border-left: none;
+      }
+      .nav-link.active {
+        color: rgba(30, 22, 86, 1);
+        border-bottom: transparent;
+      }
+    }
+  }
+}
+
+.verticaltabs2 .tabs {
+  border: none;
+  border-radius: 6px;
+}
+.verticaltabs2 .tabs > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.verticaltabs2 .tabcontainer {
+  background-color: #fafafa;
+  margin-top: 20px;
+}
+.verticaltabs2 .tabs > ul li {
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e9;
+}
+.verticaltabs2 .tabs > ul li {
+}
+
+.verticaltabs2 .tabs > ul li:last-child {
+  border-bottom: none;
+}
+.verticaltabs2 .tabs > ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1.2rem 3rem;
+  color: #1e1656;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+}
+.verticaltabs2 .tabs > ul li a.active {
+  background: #fafafa;
+  color: #1e1656;
+}
+.verticaltabs2 .tabs > ul li a:hover:not(.active) {
+  color: #1e1656;
+}
+.verticaltabs2 .tabs .verticaltabs2__cont {
+  background: #fafafa;
+  padding: 0;
+  display: none;
+}
+.verticaltabs2 .tabs .verticaltabs2__cont.active {
+  display: block;
+  border-radius: 0 6px 6px 0;
+}
+@media (min-width: 768px) {
+  .verticaltabs2 .tabs {
+    display: flex;
+  }
+  .verticaltabs2 .tabs > ul {
+    width: 40%;
+  }
+  .verticaltabs2 .tabcontainer {
+    width: 60%;
+    border-radius: 0 6px 6px 0;
+    margin-top: 0;
+  }
+  .verticaltabs2 .inner_info {
+    padding: 30px;
+  }
+  .verticaltabs2 .tabs > ul li:first-child a {
+    border-top-left-radius: 6px;
+  }
+  .verticaltabs2 .tabs > ul li:last-child a {
+    border-bottom-left-radius: 6px;
+  }
+}
+
+/*======= entityTab css end here =======*/
+
+/*====== Glance Block css start here ====== */
+.glance-item {
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+  .glance-item--inner {
+    display: inline-block;
+    .glance-name {
+      color: #1e1656;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .glance-number {
+      font-size: 1.5rem;
+      color: #1e1656;
+      font-weight: 600;
+    }
+  }
+}
+/*====== Glance Block css start here ====== */
