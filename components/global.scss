@@ -1,9 +1,4 @@
-.slider {
-  width: 650px;
-  margin: 0 auto;
-}
-
-img {
-  width: 200px;
-  height: 200px;
-}
+@import 'config.all';
+@import 'base/*/*.scss';
+@import 'atoms/*.scss';
+@import 'assets/css/main.scss';
