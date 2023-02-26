@@ -384,31 +384,33 @@ p,
   }
 }
 
-.verticaltabs2 .tabs {
+.verticaltabs .tabs {
   border: none;
-  border-radius: 6px;
+  border: 1px solid #e1e1e9;
+  border-left: none;
+  border-right: none;
 }
-.verticaltabs2 .tabs > ul {
+.verticaltabs .tabs > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.verticaltabs2 .tabcontainer {
+.verticaltabs .tabcontainer {
   background-color: #fafafa;
   margin-top: 20px;
 }
-.verticaltabs2 .tabs > ul li {
+.verticaltabs .tabs > ul li {
   display: block;
   text-align: left;
   border-bottom: 1px solid #e1e1e9;
 }
-.verticaltabs2 .tabs > ul li {
+.verticaltabs .tabs > ul li {
 }
 
-.verticaltabs2 .tabs > ul li:last-child {
+.verticaltabs .tabs > ul li:last-child {
   border-bottom: none;
 }
-.verticaltabs2 .tabs > ul li a {
+.verticaltabs .tabs > ul li a {
   display: block;
   text-decoration: none;
   padding: 1.2rem 3rem;
@@ -417,62 +419,61 @@ p,
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
 }
-.verticaltabs2 .tabs > ul li a.active {
+.verticaltabs .tabs > ul li a.active {
   background: #fafafa;
   color: #1e1656;
 }
-.verticaltabs2 .tabs > ul li a:hover:not(.active) {
+.verticaltabs .tabs > ul li a:hover:not(.active) {
   color: #1e1656;
 }
-.verticaltabs2 .tabs .verticaltabs2__cont {
+.verticaltabs .tabs .verticaltabs__cont {
   background: #fafafa;
   padding: 0;
   display: none;
 }
-.verticaltabs2 .tabs .verticaltabs2__cont.active {
+.verticaltabs .tabs .verticaltabs__cont.active {
   display: block;
-  border-radius: 0 6px 6px 0;
 }
 @media (min-width: 768px) {
-  .verticaltabs2 .tabs {
+  .verticaltabs .tabs {
     display: flex;
   }
-  .verticaltabs2 .tabs > ul {
+  .verticaltabs .tabs > ul {
     width: 40%;
   }
-  .verticaltabs2 .tabcontainer {
+  .verticaltabs .tabcontainer {
     width: 60%;
-    border-radius: 0 6px 6px 0;
     margin-top: 0;
   }
-  .verticaltabs2 .inner_info {
+  .verticaltabs .inner_info {
     padding: 30px;
-  }
-  .verticaltabs2 .tabs > ul li:first-child a {
-    border-top-left-radius: 6px;
-  }
-  .verticaltabs2 .tabs > ul li:last-child a {
-    border-bottom-left-radius: 6px;
   }
 }
 
 /*======= entityTab css end here =======*/
 
 /*====== Glance Block css start here ====== */
-.glance-item {
-  position: relative;
-  font-family: 'Roboto Slab', serif;
-  .glance-item--inner {
-    display: inline-block;
-    .glance-name {
-      color: #1e1656;
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-    .glance-number {
-      font-size: 1.5rem;
-      color: #1e1656;
-      font-weight: 600;
+.glance-block {
+  &.borderTop {
+    border-top: 1px solid #e1e1e9;
+    padding-top: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  .glance-item {
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    .glance-item--inner {
+      display: inline-block;
+      .glance-name {
+        color: #1e1656;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      .glance-number {
+        font-size: 1.5rem;
+        color: #1e1656;
+        font-weight: 600;
+      }
     }
   }
 }
