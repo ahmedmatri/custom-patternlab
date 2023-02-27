@@ -77,7 +77,20 @@ h5 {
 h6 {
   font-size: 0.75rem;
 }
-
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+}
 h1.big,
 .h1.big {
   font-size: 4.5rem;
@@ -93,6 +106,46 @@ p,
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   color: #333333;
+}
+.l-wrap.l-wrap {
+  background: #ffffff;
+  padding: 100px 0;
+  margin: 0;
+}
+.m-wrap.m-wrap {
+  background: #ffffff;
+  padding: 60px 0;
+  margin: 0;
+}
+.s-wrap.s-wrap {
+  background: #ffffff;
+  padding: 40px 0;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .l-wrap.l-wrap {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .l-wrap.l-wrap {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .l-wrap.l-wrap {
+    padding: 20px 0;
+  }
+  .m-wrap.m-wrap {
+    padding: 30px 0;
+  }
+}
+
+.l-wrap.l-wrap section:last-child {
+  margin-bottom: 0;
 }
 .roboto {
   font-family: 'Roboto', sans-serif;
@@ -346,13 +399,87 @@ p,
     display: block;
     width: 0;
     height: 1px;
-    background: #1e1656;
+    background: #1c1953;
     transition: width 0.3s;
   }
   &:before {
     display: none !important;
   }
 }
+/*======= slick slider default css start here ======*/
+.slick-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
+  z-index: 999;
+  font-size: 0;
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 100%;
+  transition: all 0.3s;
+  background: transparent;
+}
+@media (max-width: 1200px) {
+  .slick-slider .slick-arrow {
+    width: 52px;
+    height: 52px;
+  }
+}
+@media (max-width: 992px) {
+  .slick-slider .slick-arrow {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .slick-slider .slick-arrow {
+    width: 32px;
+    height: 32px;
+  }
+}
+.slick-slider .slick-arrow.slick-disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.slick-slider .slick-arrow:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  transition: all 0.3s;
+}
+
+.slick-slider .slick-arrow:before {
+  content: '\f054';
+  display: inline-block;
+  font: normal normal normal 21px/1 FontAwesome;
+  width: 23px;
+  height: 19px;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .slick-slider .slick-arrow:before {
+    width: 15px;
+  }
+}
+
+.slick-slider .slick-prev {
+  left: -10px;
+  -webkit-transform: translate(0%, -50%) rotate(-180deg);
+  transform: translate(0%, -50%) rotate(-180deg);
+}
+.slick-slider .slick-next {
+  right: -10px;
+}
+
+/*======= slick slider default css end here ======*/
 
 /*======= entityTab css start here =======*/
 .pl-c-logo {
@@ -478,3 +605,145 @@ p,
   }
 }
 /*====== Glance Block css start here ====== */
+
+/*====== Event Block css start here ====== */
+.eventList {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 6rem;
+  &.eventList__slide {
+    grid-gap: 0;
+    .eventList__item {
+      padding: 0 40px;
+    }
+    @media (max-width: 768px) {
+      .eventList__item {
+        padding: 0 10px;
+      }
+    }
+  }
+  .eventList__item {
+    padding: 0;
+    margin: 0;
+    a {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      color: inherit;
+      .eventList__item--img {
+        margin-bottom: 1.9rem;
+      }
+      .eventList__item--date {
+        position: relative;
+        display: flex;
+        padding-bottom: 0.8rem;
+        margin-bottom: 0.4rem;
+        .eventDate {
+          display: flex;
+          margin-right: 15px;
+          padding-right: 15px;
+          position: relative;
+          span {
+            color: #1c1953;
+            i {
+              font-style: normal;
+              display: block;
+            }
+          }
+          .date {
+            font-size: 32px;
+            line-height: 0.8;
+            margin-right: 10px;
+          }
+          .montYear {
+            font-size: 0.8rem;
+            line-height: 1.1;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            right: -4px;
+            top: 50%;
+            height: 2px;
+            width: 8px;
+            margin-top: -1px;
+            background-color: #1c1953;
+            -webkit-transition: width 0.3s;
+            transition: width 0.3s;
+          }
+          &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+            &:after {
+              display: none;
+            }
+          }
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 40px;
+          background-color: #e1e1e9;
+          -webkit-transition: width 0.3s;
+          transition: width 0.3s;
+        }
+      }
+      @media (max-width: 768px) {
+        .eventList__item--date {
+          padding-bottom: 0.8rem;
+          margin-bottom: 0.4rem;
+          .eventDate {
+            .date {
+              font-size: 1.2rem;
+              line-height: 0.8;
+              margin-right: 10px;
+            }
+            .montYear {
+              font-size: 0.6rem;
+              line-height: 1.1;
+            }
+          }
+        }
+      }
+      .eventList__item--tag {
+        color: #00ccee;
+        font-size: 11px;
+        padding: 0.3rem 0 0;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .eventList__item--entity {
+        font-size: 0.9rem;
+        color: #1c1953;
+        padding: 0.1rem 0;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .eventList__item--title {
+        font-size: 1.3rem;
+        color: #1c1953;
+        padding: 0.3rem 0;
+        line-height: 1.4;
+      }
+      @media (max-width: 768px) {
+        .eventList__item--title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .slick-prev {
+    left: -30px;
+  }
+  .slick-next {
+    right: -30px;
+  }
+}
+
+/*====== Event Block css start here ====== */
