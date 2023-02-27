@@ -79,14 +79,39 @@ if ($(".verticaltabs_clg").length > 0) {
       ]
     });
   }
-
-  // $('.eventList__slide').slick({
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   dots: true,
-  //   centerMode: true,
-  //   focusOnSelect: true,
-  //   arrows: false,
-  //   dots: false,
-  // });
-   /* Event slider js end here */
+/* Event slider js start here */
+if ($(".newsList__slide").length > 0) {
+  $(".newsList__slide").slick({
+    dotsClass: "slider__dots",
+    infinite: true,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    speed: 1000,
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          dots: false
+        }
+      },
+      {
+          breakpoint: 567,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            centerMode: true,
+            centerPadding: '30px',
+          }
+        }
+    ]
+  });
+}
