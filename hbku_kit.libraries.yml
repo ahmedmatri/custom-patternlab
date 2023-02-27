@@ -2,8 +2,14 @@ global:
   css:
     theme:
       dist/components/global.css: {}
+      dist/components/assets/css/bootstrap.min.css: {}
+      dist/components/assets/css/all.css: {}
+      dist/components//assets/css/main.css: {}
+      dist/components/assets/css/fontawesome.css: {}
   js:
-    dist/components/main.js:
+    dist/components/assets/js/bootstrap.bundle.min.js:
+    dist/components/assets/js/jquery.min.js:
+    dist/components/global-min.js:
       attributes:
         type: module
 
