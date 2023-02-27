@@ -1,0 +1,27 @@
+<section class="m-wrap section-glance" style="background-image:url('../../../images/library.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="glance">
+          <h2 class="text-white">{{ title }}</h2>
+          <div class="text-white">{{ description }}</div>
+          <div class="glance__list">
+            {% if items %}
+              {% for item in items %}
+                {{ items }}
+              {% endfor %}
+            {% else %}
+              {% for i in 1..10 %}
+                {% include 'molecules/items/glance.twig' with {
+                  "key": "Colleges "~ i,
+                  "value": 6 + i,
+                } %}
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<section class="m-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="pb-5">{{ title }}</h1>
+        <div class="eventList eventList__slide">
+          {% if items %}
+            {% for item in items %}
+              {{ items }}
+            {% endfor %}
+          {% else %}
+            {% for i in 1..4 %}
+              {% include 'molecules/cards/event.twig' with {
+                "title": "Disability Rights in the MENA Region: Opportunities and Challenges "~ i,
+                "entity": "College of Islamic Studies<",
+                "tag": "Press release",
+                "img": "<img src=\"../../../images/disability.png\" alt=\"\" class=\"img-fluid\"/>",
+                "date_start": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
+                "date_end": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
+                "link_viewmore": "link View more"
+              } %}
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
