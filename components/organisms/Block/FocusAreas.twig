@@ -1,0 +1,31 @@
+<section class="m-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="focus-areas">
+          <div class="pb-5 block-title">
+             <h2>{{title}}</h2>
+             <p>{{description}}</p>
+          </div>
+          <div class="focus-areas__list">
+                {% if items %}
+              {% for item in items %}
+                {{ items }}
+              {% endfor %}
+            {% else %}
+              {% for data in datas %}
+                {% include 'molecules/cards/focusareas.twig' with {
+                    "image": data.image,
+                    "title" : data.title,
+                    "linkText" : "Learn more"
+            } %}
+              {% endfor %}
+            {% endif %}
+       
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

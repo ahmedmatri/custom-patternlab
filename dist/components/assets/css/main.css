@@ -583,6 +583,53 @@ a.bg-medium-blue:hover {
   display: none !important;
 }
 
+.h-btn.h-btn-link-white {
+  color: #157dba;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.h-btn.h-btn-link-white i {
+  font-size: 0.8rem;
+  padding: 0 0.3rem 0 0.3rem;
+  margin: 0;
+}
+
+.h-btn.h-btn-link-white:hover, .h-btn.h-btn-link-white.active {
+  color: #ffffff;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.h-btn.h-btn-link-white:hover:after, .h-btn.h-btn-link-white:hover.active, .h-btn.h-btn-link-white.active:after, .h-btn.h-btn-link-white.active.active {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.h-btn.h-btn-link-white:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.h-btn.h-btn-link-white:before {
+  display: none !important;
+}
+
 /*======= slick slider default css start here ======*/
 
 .slick-slider .slick-arrow {
@@ -1153,4 +1200,93 @@ a.bg-medium-blue:hover {
 }
 
 /*====== Glance Block css start here ======*/
+
+/*====== Focus Areas Block css start here ======*/
+
+.focus-areas__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
+@media (min-width: 540px) {
+  .focus-areas__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .focus-areas__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .focus-areas__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .focus-areas__list {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+.focus-areas__list___item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.focus-areas__list___item .focus-areas__list___item--img {
+  position: relative;
+}
+
+.focus-areas__list___item .focus-areas__list___item--img figure {
+  padding: 0;
+  margin: 0;
+}
+
+.focus-areas__list___item .focus-areas__list___item--img figure img {
+  border-radius: 10px;
+}
+
+.focus-areas__list___item .focus-areas__list___item--img:after {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.75)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 50%);
+  width: 100%;
+  height: 39%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 6px;
+}
+
+.focus-areas__list___item .focus-areas__list___item--info {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.focus-areas__list___item .focus-areas__list___item--info .focus-areas--title {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/*====== Focus Areas Block css end here ======*/
 /*# sourceMappingURL=../../../maps/assets/css/main.css.map */
