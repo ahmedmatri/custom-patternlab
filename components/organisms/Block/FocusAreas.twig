@@ -13,7 +13,7 @@
                 {{ items }}
               {% endfor %}
             {% else %}
-              {% for data in datas %}
+              {% for data in focus_area.datas %}
                 {% include 'molecules/cards/focusareas.twig' with {
                     "image": data.image,
                     "title" : data.title,
@@ -21,7 +21,7 @@
             } %}
               {% endfor %}
             {% endif %}
-       
+
           </div>
         </div>
 

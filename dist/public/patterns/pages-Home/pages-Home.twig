@@ -1,71 +1,13 @@
 {% include 'organisms/Block/Entity.twig' %}
 {% include 'organisms/Block/Events.twig' with { title : "Upcoming events"} %}
 {% include 'organisms/Block/News.twig' with { title : "Upcoming news"} %}
-{% include 'organisms/Block/Glance.twig' with { 
-    title: "HBKU at a Glance", 
-    description: "Founded in 2010, Hamad Bin Khalifa University <br /> is a Qatari institution located in Education City.",
-    datas : [
-    {
-      "title" : "Colleges",
-      "number" : 6
-    },
-    {
-      "title" : "Academic <br /> Programs",
-      "number" : 36
-    },
-    {
-      "title" : "Alumni",
-      "number" : 1579
-    },
-    {
-      "title" : "Faculty Members",
-      "number" : "410+"
-    },
-    {
-      "title" : "National Research <br /> Institutes",
-      "number" : 3
-    },
-    {
-      "title" : "Students",
-      "number" : 916
-    },
-    {
-      "title" : "Nationalities",
-      "number" : "70+"
-    },
-    {
-      "title" : "Scientists",
-      "number" : "397"
-    }
-   ]
-    } %}
-{% include 'organisms/Block/FocusAreas.twig' with { 
-    title : "Focus Areas",
-    description : "Collaborative and multidisciplinary research areas that concentrate on <br /> solving specific scientific or social problems and target research challenges.",
-    datas : [
-    {
-        "title" : "Progressive <br /> Education",
-        "linkText" : "Learn more",
-        "image": "<img src=\"../../../images/progressive-education.png\" alt=\"\" class=\"img-fluid\">"
-    },
-    {
-        "title" : "Precision <br /> Health",
-        "linkText" : "Learn more",
-        "image": "<img src=\"../../../images/precision-health.png\" alt=\"\" class=\"img-fluid\"/>"
-    },
-    {
-        "title" : "Sustainability",
-        "linkText" : "Learn more",
-        "image": "<img src=\"../../../images/sustainability.png\" alt=\"\" class=\"img-fluid\"/>"
-    },
-    {
-        "title" : "Artificial <br /> Intelligence",
-        "linkText" : "Learn more",
-        "image": "<img src=\"../../../images/artificial-intelligence.png\" alt=\"\" class=\"img-fluid\"/>"
-    },
-    {
-        "title" : "Social <br /> Progress",
-        "linkText" : "Learn more",
-        "image": "<img src=\"../../../images/social-progress.png\" alt=\"\" class=\"img-fluid\"/>"
-    }
-   ]} %}
+{% include 'organisms/Block/Glance.twig' with {
+  title: glance.title,
+  description: glance.description,
+  datas : glance.datas
+} %}
+{% include 'organisms/Block/FocusAreas.twig' with {
+  title : focus_area.title,
+  description: focus_area.description,
+  datas : focus_area.datas
+} %}
