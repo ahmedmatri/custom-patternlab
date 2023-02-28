@@ -1,10 +1,7 @@
-{% include 'organisms/Block/Entity.twig' %}
-{% include 'organisms/Block/Events.twig' with { title : "Upcoming events"} %}
-{% include 'organisms/Block/News.twig' with { title : "Upcoming news"} %}
-{% include 'organisms/Block/Glance.twig' with { title: "HBKU at a Glance", description: "Founded in 2010, Hamad Bin Khalifa University is a Qatari institution located in Education City."} %}
-{% include 'organisms/Block/FocusAreas.twig' with { title : "Focus Areas",
-    description : "Collaborative and multidisciplinary research areas that concentrate on <br /> solving specific scientific or social problems and target research challenges.",
-    "datas" : [
+{
+    "title" : "Focus Areas",
+    "description" : "Collaborative and multidisciplinary research areas that concentrate on <br /> solving specific scientific or social problems and target research challenges.",
+   "datas" : [
     {
         "title" : "Progressive <br /> Education",
         "linkText" : "Learn more",
@@ -30,4 +27,6 @@
         "linkText" : "Learn more",
         "image": "<img src=\"../../../images/social-progress.png\" alt=\"\" class=\"img-fluid\"/>"
     }
-   ]} %}
+   ]
+    
+}
