@@ -7,13 +7,15 @@
       <div class="eventDate">
         {{ date_start }}
       </div>
-      <div class="eventDate">
-        {{ date_end }}
-      </div>
+      {% if date_end %}
+        <div class="eventDate">
+          {{ date_end }}
+        </div>
+      {% endif %}
     </div>
     <div class="eventList__item--tag">{{ tag }}</div>
-    <div class="eventList__item--entity">{{ entity }}/div>
-      <h4 class="eventList__item--title">{{ title }}</h4>
+    <div class="eventList__item--entity">{{ entity }}</div>
+    <h4 class="eventList__item--title">{{ title }}</h4>
   </a>
 </div>
 
