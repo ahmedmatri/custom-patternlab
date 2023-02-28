@@ -11,10 +11,10 @@
                 {{ items }}
               {% endfor %}
             {% else %}
-              {% for i in 1..10 %}
-                {% include 'molecules/items/glance.twig' with {
-                  "key": "Colleges "~ i,
-                  "value": 6 + i,
+              {% for datas in datas %}
+                {% include 'molecules/cards/glance.twig' with {
+                  "title" : datas.title,
+                  "number" : datas.number
                 } %}
               {% endfor %}
             {% endif %}
