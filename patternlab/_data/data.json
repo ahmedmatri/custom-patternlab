@@ -1,1 +1,149 @@
-{}
+{
+  focus_area: {
+    title: "Focus Areas",
+    description: "Collaborative and multidisciplinary research areas that concentrate on <br /> solving specific scientific or social problems and target research challenges.",
+    datas: [
+      {
+        "title": "Progressive <br /> Education",
+        "linkText": "Learn more",
+        "image": "<img src=\"../../../images/progressive-education.png\" alt=\"\" class=\"img-fluid\"/>"
+      },
+      {
+        "title": "Precision <br /> Health",
+        "linkText": "Learn more",
+        "image": "<img src=\"../../../images/precision-health.png\" alt=\"\" class=\"img-fluid\"/>"
+      },
+      {
+        "title": "Sustainability",
+        "linkText": "Learn more",
+        "image": "<img src=\"../../../images/sustainability.png\" alt=\"\" class=\"img-fluid\"/>"
+      },
+      {
+        "title": "Artificial <br /> Intelligence",
+        "linkText": "Learn more",
+        "image": "<img src=\"../../../images/artificial-intelligence.png\" alt=\"\" class=\"img-fluid\"/>"
+      },
+      {
+        "title": "Social <br /> Progress",
+        "linkText": "Learn more",
+        "image": "<img src=\"../../../images/social-progress.png\" alt=\"\" class=\"img-fluid\"/>"
+      }
+    ]
+  },
+  glance: {
+    title: "HBKU at a Glance",
+    description: "Founded in 2010, Hamad Bin Khalifa University is a Qatari institution located in Education City.",
+    datas: [
+      {
+        "key": "Colleges",
+        "value": 6
+      },
+      {
+        "key": "Academic <br /> Programs",
+        "value": 36
+      },
+      {
+        "key": "Alumni",
+        "value": 1579
+      },
+      {
+        "key": "Faculty Members",
+        "value": "410+"
+      },
+      {
+        "key": "National Research <br /> Institutes",
+        "value": 3
+      },
+      {
+        "key": "Students",
+        "value": 916
+      },
+      {
+        "key": "Nationalities",
+        "value": "70+"
+      },
+      {
+        "key": "Scientists",
+        "value": "397"
+      }
+    ]
+  },
+  "news": {
+    datas: [
+      {
+        "title": "Disability Rights in the MENA Region: Opportunities and Challenges ",
+        "entity": "College of Islamic Studies",
+        "tag": "Research",
+        "img": "<img src=\"../../../images/disability.png\" alt=\"\" class=\"img-fluid\"/>",
+        "date": "October 16, 2022",
+        "url": "#"
+      },
+      {
+        "title": "EC Innovative Entrepreneurship Program Winners Attend Training",
+        "entity": "College of Science and Engineering",
+        "tag": "PRESS RELEASE",
+        "img": "<img src=\"../../../images/D3S_1673.png\" alt=\"\" class=\"img-fluid\"/>",
+        "date": "October 18, 2022",
+        "url": "#"
+      },
+      {
+        "title": "QCRI, HMC and the Mayo Clinic Shed Light on Genomics of Coronary Heart Disease",
+        "entity": "Qatar Computing Research Institute",
+        "tag": "FEATURE",
+        "img": "<img src=\"../../../images/news-1.png\" alt=\"\" class=\"img-fluid\"/>",
+        "date": "October 16, 2022",
+        "url": "#"
+      },
+      {
+        "title": "QEERI Aspires to Maximize Photovoltaic Energy Yield",
+        "entity": "Qatar Environment and Energy Research Institute",
+        "tag": "News",
+        "img": "<img src=\"../../../images/news.png\" alt=\"\" class=\"img-fluid\"/>",
+        "date": "October 16, 2022",
+        "url": "#"
+      }
+    ]
+  },
+  "events": {
+    datas: [
+      {
+        "title": "Disability Rights in the MENA Region: Opportunities and Challenges",
+        "entity": "College of Islamic Studies",
+        "tag": "Press release",
+        "img": "<img src=\"../../../images/disability.png\" alt=\"\" class=\"img-fluid\"/>",
+        "date_start": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
+        "date_end": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
+        "link_viewmore": "link View more",
+        "url": "#"
+      },
+      {
+        "title": "Biomass and Environmental Biotechnology Futures for the GCC",
+        "entity": "Qatar Environment and Energy Research Institute",
+        "tag": "Lecture",
+        "img": "<img src=\"../../../images/event.png\" alt=\"\" class=\"img-fluid\"/>",
+        "date_start": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
+        "link_viewmore": "link View more",
+        "url": "#"
+      },
+      {
+        "title": "Advancements in Disease Research by Measurement of Biomarkers using Simoa Technology",
+        "entity": "College of Science and Engineering",
+        "tag": "WORKSHOP",
+        "img": "<img src=\"../../../images/D3S_1673.png\" alt=\"\" class=\"img-fluid\"/>",
+        "date_start": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
+        "date_end": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
+        "link_viewmore": "link View more",
+        "url": "#"
+      },
+      {
+        "title": "Biomass and Environmental Biotechnology Futures for the GCC",
+        "entity": "Qatar Environment and Energy Research Institute",
+        "tag": "Lecture",
+        "img": "<img src=\"../../../images/event.png\" alt=\"\" class=\"img-fluid\"/>",
+        "date_start": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
+        "link_viewmore": "link View more",
+        "url": "#"
+      }
+    ]
+  }
+}

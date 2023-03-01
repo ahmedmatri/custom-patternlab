@@ -9,15 +9,16 @@
               {{ items }}
             {% endfor %}
           {% else %}
-            {% for i in 1..4 %}
+            {% for data in events.datas %}
               {% include 'molecules/cards/event.twig' with {
-                "title": "Disability Rights in the MENA Region: Opportunities and Challenges "~ i,
-                "entity": "College of Islamic Studies<",
-                "tag": "Press release",
-                "img": "<img src=\"../../../images/disability.png\" alt=\"\" class=\"img-fluid\"/>",
-                "date_start": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
-                "date_end": " <span class=\"date\">29 </span>\n        <span class=\"montYear\">AUGUST <i> 2022</i></span> ",
-                "link_viewmore": "link View more"
+                "title": data.title,
+                "entity": data.entity,
+                "tag": data.tag,
+                "img": data.img,
+                "date_start": data.date_start,
+                "date_end": data.date_end,
+                "link_viewmore": data.link_viewmore,
+                "url":data.url,
               } %}
             {% endfor %}
           {% endif %}
