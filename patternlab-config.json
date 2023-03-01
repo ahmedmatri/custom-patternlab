@@ -101,8 +101,8 @@
       "text": "Web Kit",
       "altText": "HBKU Lab Logo",
       "url": "./",
-      "srcLight": "../../images/logo.svg",
-      "srcDark": "../../images/logo.svg",
+      "srcLight": "../../images/logo-icon.svg",
+      "srcDark": "../../images/logo-icon.svg",
       "width": "40",
       "height": "40"
     }
