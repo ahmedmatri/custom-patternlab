@@ -1300,3 +1300,88 @@ a.bg-medium-blue:hover {
   }
 }
 /*====== Footer Block css end here ======*/
+/*====== Header Block css start here ======*/
+.header {
+  font-family: 'Roboto Slab', serif;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  .header-wrap {
+    align-items: flex-start;
+    .logo {
+      a {
+        display: inline-block;
+        img {
+          max-height: 60px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .nav-global {
+    .nav-main {
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: inline-block;
+        a {
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 300;
+          padding: 0px 10px;
+        }
+      }
+    }
+    .nav-sub {
+      padding-left: 3rem;
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          padding: 0px 4px;
+          margin: 0;
+          list-style: none;
+          display: inline-block;
+          ul {
+            padding: 0;
+            margin: 0;
+            li {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+              display: inline-block;
+              a {
+                color: #ffffff;
+                font-size: 14px;
+                text-decoration: none;
+                padding: 0 2px;
+              }
+              &.active {
+                display: none;
+              }
+            }
+          }
+          span {
+            color: #ffffff;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 0 1px;
+            i {
+              font-size: 1rem;
+            }
+          }
+          i {
+            color: #ffffff;
+          }
+          &.accessibility {
+            font-family: 'Roboto', serif;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+/*====== Header Block css end here ======*/

@@ -1570,4 +1570,107 @@ a.bg-medium-blue:hover {
 }
 
 /*====== Footer Block css end here ======*/
+
+/*====== Header Block css start here ======*/
+
+.header {
+  font-family: "Roboto Slab", serif;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.header .header-wrap {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header .header-wrap .logo a {
+  display: inline-block;
+}
+
+.header .header-wrap .logo a img {
+  max-height: 60px;
+  width: 100%;
+}
+
+.header .nav-global .nav-main {
+  padding: 0;
+  margin: 0;
+}
+
+.header .nav-global .nav-main li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.header .nav-global .nav-main li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0px 10px;
+}
+
+.header .nav-global .nav-sub {
+  padding-left: 3rem;
+}
+
+.header .nav-global .nav-sub ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header .nav-global .nav-sub ul li {
+  padding: 0px 4px;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.header .nav-global .nav-sub ul li ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header .nav-global .nav-sub ul li ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.header .nav-global .nav-sub ul li ul li a {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+.header .nav-global .nav-sub ul li ul li.active {
+  display: none;
+}
+
+.header .nav-global .nav-sub ul li span {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0 1px;
+}
+
+.header .nav-global .nav-sub ul li span i {
+  font-size: 1rem;
+}
+
+.header .nav-global .nav-sub ul li i {
+  color: #ffffff;
+}
+
+.header .nav-global .nav-sub ul li.accessibility {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+}
+
+/*====== Header Block css end here ======*/
 /*# sourceMappingURL=../../../maps/assets/css/main.css.map */

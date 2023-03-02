@@ -30,6 +30,8 @@
 <link rel="stylesheet" href="/components/assets/css/v5-font-face.css">
 <link rel="stylesheet" href="/components/assets/css/v5-font-face.min.css">
 <link rel="stylesheet" href="/components/assets/slick/slick.css">
+<link rel="stylesheet" href="/components/atoms/button/button.css">
+<link rel="stylesheet" href="/components/base/colors/base.css">
 <link rel="stylesheet" href="/components/bootstrap.css">
 <link rel="stylesheet" href="/components/global.css">
 <link rel="stylesheet" href="/components/tailwind.css">
@@ -41,50 +43,50 @@
 
   </head>
   <body class=""></body>
-</html><header class="mez header">
-    <div class="header__wrap">
-        <div class="container">
-            <button type="button" data-toggle="collapse" data-target=".header__nav" class="burger navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-
-            <h1 class="logo">
+</html><header class="header" style="background-image: url(../../../images/header-bg.png); background-size: cover;">
+    <div class="container">
+        <div class="header-wrap d-flex flex-wrap justify-content-center align-baseline">
+            <h1 class="logo d-flex align-items-center mb-md-0 me-md-auto">
                 <a title="Hamad Bin Khalifa University" href="#">
                     <img src="../../../images/logo.svg" alt="Hamad Bin Khalifa University" title="Hamad Bin Khalifa University" />
                 </a>
             </h1>
-        </div>
-    </div>
-
-    <div class="header__nav collapse" aria-expanded="false" style="height: 0px;">
-        <div class="header__top">
-            <div class="container">
-                <div class="insice-burger">
-                    <button type="button" data-toggle="collapse" data-target=".header__nav" class="burger navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                </div>
-                <div class="nav-main menu-main-default">
-                    <ul class="menu">
-                        <li class="first leaf"><a href="#">home</a></li>
-                        <li class="leaf"><a href="#">ABOUT CHLS</a></li>
-                        <li class="leaf"><a href="#">ADMISSIONS</a></li>
-                        <li class="leaf"><a href="#">RESEARCH</a></li>
-                        <li class="leaf"><a href="#">LIFE AT CHLS</a></li>
-                        <li class="leaf"><a href="#">CONTACT</a></li>
-                        <li class="last leaf">
-                            <a href="#">
-                                Resourse
-                            </a>
+            <div class="nav-global d-flex flex-wrap justify-content-center align-baseline">
+                <ul class="nav nav-main">
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Admissions</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Academic</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Research</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Innovation</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">University Life</a></li>
+                </ul>
+                <div class="nav-sub">
+                    <ul>
+                        <li class="lang">
+                            <ul class="lang-switcher navbar-right">
+                                <li class="first active"><a href="/en" class="language-link active" xml:lang="en">English</a></li>
+                                <li class="last"><a href="/ar" class="language-link" xml:lang="ar">العربية</a></li>
+                            </ul>
+                        </li>
+                        <li class="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></li>
+                        <li class="login"><i class="fa-sharp fa-solid fa-circle-user"></i></li>
+                        <li class="accessibility">
+                            <span class="accessibility--icon"><i class="fa-solid fa-universal-access"></i></span>
+                            <span class="accessibility--text">Accessibility</span>
                         </li>
                     </ul>
                 </div>
             </div>
+
         </div>
     </div>
 </header><!--DO NOT REMOVE-->
   <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"organisms","patternSubgroup":"Block"},"patternExtension":"twig","patternName":"Header","patternPartial":"organisms-Header","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-Home","lineagePath":"../../patterns/pages-Home/pages-Home.rendered.html"}],"lineageR":[{"lineagePattern":"pages-Home","lineagePath":"../../patterns/pages-Home/pages-Home.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"organisms","patternSubgroup":"Block"},"patternExtension":"twig","patternName":"Header","patternPartial":"organisms-Header","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
 </script>
 
 <script>
-  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"organisms","patternSubgroup":"Block"},"patternExtension":"twig","patternName":"Header","patternPartial":"organisms-Header","patternState":"","patternEngineName":"twig-php","extraOutput":{}};
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-Home","lineagePath":"../../patterns/pages-Home/pages-Home.rendered.html"}],"lineageR":[{"lineagePattern":"pages-Home","lineagePath":"../../patterns/pages-Home/pages-Home.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"organisms","patternSubgroup":"Block"},"patternExtension":"twig","patternName":"Header","patternPartial":"organisms-Header","patternState":"","patternEngineName":"twig-php","extraOutput":{}};
 </script>
 
 <script>
@@ -120,10 +122,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1677731944545">
+<script id="pl-js-polyfill-insert-1677741968444">
   (function() {
     if (self != top) {
-      var cb = '1677731944545';
+      var cb = '1677741968444';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -136,7 +138,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1677731944545" nomodule>
+<script id="pl-js-insert-1677741968444" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
