@@ -13,7 +13,4 @@ global:
       attributes:
         type: module
 
-# tailwind:
-#   css:
-#     theme:
-#       dist/components/tailwind.css: {}
+ 
