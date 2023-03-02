@@ -145,5 +145,55 @@
         "url": "#"
       }
     ]
+  },
+  "footer": {
+    "logo": "<img src=\"../../../images/hbku-logo-white.svg\" alt=\"\" class=\"img-fluid\"/>",
+    footerAddress :
+      {
+        "infoNo": "Information Desk: +974 44545816",
+        "hours": "Working Hours: 8:00 am - 3:30 pm (GMT+3)"
+      },
+    footerlink1: [
+      {
+        "link": "About HBKU"
+      },
+      {
+        "link": "Admissions"
+      },
+      {
+        "link": "Academic"
+      },
+      {
+        "link": "People"
+      }
+    ],
+    footerlink2: [
+      {
+        "link": "Research"
+      },
+      {
+        "link": "Innovation"
+      },
+      {
+        "link": "University Life"
+      },
+      {
+        "link": "Maps & Directions"
+      }
+    ],
+    footerlink3: [
+      {
+        "link": "News & Stories"
+      },
+      {
+        "link": "Upcoming Events"
+      },
+      {
+        "link": "Careers"
+      },
+      {
+        "link": "Contact Us"
+      }
+    ]
   }
 }
