@@ -1,6 +1,7 @@
 <?php
 
 /**
- * @file
+ * @file hbku-kit
  * Functions to support theming in the hbku_kit theme.
  */
+
