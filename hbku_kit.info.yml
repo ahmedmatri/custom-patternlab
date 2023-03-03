@@ -13,8 +13,8 @@ regions:
 
 libraries:
   - core/normalize
-  # - hbku_kit/global
-  # - hbku_kit/tailwind
+  - hbku_kit/global
+
 
 components:
   namespaces:
