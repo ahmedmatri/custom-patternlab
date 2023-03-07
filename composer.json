@@ -20,5 +20,10 @@
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
-  ]
+  ],
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
 }
