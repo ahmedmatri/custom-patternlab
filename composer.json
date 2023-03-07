@@ -25,5 +25,6 @@
     "allow-plugins": {
       "composer/installers": true
     }
-  }
+  },
+  "https_only": true
 }
