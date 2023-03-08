@@ -1,38 +1,136 @@
-<header class="header" style="background-image: url(../../../images/header-bg.png); background-size: cover;">
-    <div class="container">
-        <div class="header-wrap d-flex flex-wrap justify-content-center align-baseline">
-            <h1 class="logo d-flex align-items-center mb-md-0 me-md-auto">
-                <a title="Hamad Bin Khalifa University" href="#">
-                    <img src="../../../images/logo.svg" alt="Hamad Bin Khalifa University" title="Hamad Bin Khalifa University" />
-                </a>
-            </h1>
-            <div class="nav-global d-flex flex-wrap justify-content-center align-baseline">
-                <ul class="nav nav-main">
-                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Admissions</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Academic</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Research</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Innovation</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">University Life</a></li>
-                </ul>
-                <div class="nav-sub">
-                    <ul>
-                        <li class="lang">
-                            <ul class="lang-switcher navbar-right">
-                                <li class="first active"><a href="/en" class="language-link active" xml:lang="en">English</a></li>
-                                <li class="last"><a href="/ar" class="language-link" xml:lang="ar">العربية</a></li>
-                            </ul>
-                        </li>
-                        <li class="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></li>
-                        <li class="login"><i class="fa-sharp fa-solid fa-circle-user"></i></li>
-                        <li class="accessibility">
-                            <span class="accessibility--icon"><i class="fa-solid fa-universal-access"></i></span>
-                            <span class="accessibility--text">Accessibility</span>
-                        </li>
+<div>
+<header class="header">
+    <div class="header-wrap" style="background-image: url(../../../images/header-bg.png); background-size: cover;">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center">
+                <h1 class="logo d-flex align-items-center mb-md-0 me-md-auto">
+                    <a title="Hamad Bin Khalifa University" href="#">
+                        <img src="../../../images/logo.svg" alt="Hamad Bin Khalifa University" title="Hamad Bin Khalifa University" />
+                        <img class="sticky-logo" src="../../../images/hbku-rgb.svg" alt="Hamad Bin Khalifa University" title="Hamad Bin Khalifa University" />
+                    </a>
+                </h1>
+                <div class="nav-global d-flex flex-wrap justify-content-center">
+                    <ul class="nav nav-main menu">
+                        <li class="nav-item dropdown"><a href="#" class="nav-link" id="about-us">About Us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="admissions">Admissions</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="academic">Academic</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="research">Research</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="innovation">Innovation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="university-life">University Life</a></li>
                     </ul>
+                    <div class="nav-sub">
+                        <ul>
+                            <li class="lang">
+                                <ul class="lang-switcher navbar-right">
+                                    <li class="first active"><a href="/en" class="language-link active" xml:lang="en">English</a></li>
+                                    <li class="last"><a href="/ar" class="language-link" xml:lang="ar">العربية</a></li>
+                                </ul>
+                            </li>
+                            <li class="search">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
+                                
+                                </li>
+                            <li class="login">
+                                <div class="dropdown">
+                                    <a href="#" class="d-block" id="login" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-sharp fa-solid fa-circle-user"></i>
+                                    </a>
+                                    <ul class="dropdown-menu text-small dropdown-toggle" aria-labelledby="login" style="">
+                                        <li><a class="dropdown-item" href="#" target="_blank">Student</a></li>
+                                        <li><a class="dropdown-item" href="#" target="_blank">Faculty</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="accessibility">
+                                <span class="accessibility--icon"><i class="fas fa-universal-access"></i></span>
+                                <span class="accessibility--text">Accessibility</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="header__dropdown mega-dropdown">
+        <div class="about-us header-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="header__box">
+                            <h3>HBKU</h3>
+                            <div class="header_subnav">
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">People</a></li>
+                                    <li><a href="#">Leadership</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="header__box">
+                            <h3>Focus Areas</h3>
+                            <div class="header_subnav">
+                                <ul>
+                                    <li><a href="#">Progressive Education</a></li>
+                                    <li><a href="#">Precision Health</a></li>
+                                    <li><a href="#">Sustainability</a></li>
+                                    <li><a href="#">Artificial Intelligence</a></li>
+                                    <li><a href="#">Social Progress</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="header__box">
+                            <h3>Centers</h3>
+                            <div class="header_subnav">
+                                <ul>
+                                    <li><a href="#">HBKU Press</a></li>
+                                    <li><a href="#">Executive Education Center</a></li>
+                                    <li><a href="#">GISR</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                         <div class="header__box">
+                            <h3>Departments</h3>
+                            <div class="header_subnav">
+                                <ul>
+                                    <li><a href="#">Student Affairs</a></li>
+                                    <li><a href="#">Registrar Office</a></li>
+                                    <li><a href="#">Partnerships Office</a></li>
+                                    <li><a href="#">Sponsored Research Office</a></li>
+                                    <li><a href="#">Human Resources</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
+<div class="modal fade modal-search" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form class="searchbox" action="#" method="get">
+                    <div class="input-group searchbox__inner">
+                        <div class="form-outline">
+                            <input type="search" id="form1" class="form-control" placeholder="Search here..." />
+                        </div>
+                        <button type="button" class="btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

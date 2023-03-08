@@ -1,11 +1,43 @@
-/* vertical tabs js start here */
+let $ = jQuery;
 
+$('.nav-main').on('mouseover mouseleave', 'a', function (e) {
+  target = $(this).attr("id");
+  if ($('.' + target).length > 0) {
+    if (e.type === 'mouseover') {
+      $('.' + target).show();
+      $('.header__dropdown').height($('.' + target).outerHeight()).addClass('is-active');
+    } else {
+      $('.header__dropdown').removeClass('is-active').height('0');
+      $('.' + target).hide();
+    }
+  }
+});
+
+$('.header').on('mouseover mouseleave', '.header__dropdown', function (e) {
+  if (e.type == 'mouseover') {
+    $(this).height($('.' + target).outerHeight()).addClass('is-active');
+    $('.' + target).show();
+  } else {
+    $(this).height('0').removeClass('is-active');
+    $('.' + target).hide();
+  }
+});
+
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 1) {
+		$('header, .wrapper').addClass("sticky");
+	}
+	else {
+		$('header, .wrapper').removeClass("sticky");
+	}
+});
+/* vertical tabs js start here */
 if ($(".verticaltabs_clg").length > 0) {
     $(function() {
       const tabLinks = $('.verticaltabs_clg .tab-links li a');
       tabLinks.click(function(event) {
         event.preventDefault();
-        var $this = $(this);
+        let $this = $(this);
         
         $('.verticaltabs_clg .tab-links a.active, .verticaltabs_clg .verticaltabs__cont.active').removeClass('active');
         $this.addClass('active');
@@ -19,7 +51,7 @@ if ($(".verticaltabs_clg").length > 0) {
       const tabLinks = $('.verticaltabs_res .tab-links li a');
       tabLinks.click(function(event) {
         event.preventDefault();
-        var $this = $(this);
+        let $this = $(this);
         
         $('.verticaltabs_res .tab-links a.active, .verticaltabs_res .verticaltabs__cont.active').removeClass('active');
         $this.addClass('active');
@@ -33,7 +65,7 @@ if ($(".verticaltabs_clg").length > 0) {
       const tabLinks = $('.verticaltabs_cen .tab-links li a');
       tabLinks.click(function(event) {
         event.preventDefault();
-        var $this = $(this);
+        let $this = $(this);
         
         $('.verticaltabs_cen .tab-links a.active, .verticaltabs_cen .verticaltabs__cont.active').removeClass('active');
         $this.addClass('active');
