@@ -1,0 +1,354 @@
+@import 'mixin';
+
+.h-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: $font-weight-normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background-color: $lightgray;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  padding: 0.938rem 2.188rem;
+  position: relative;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-family: $font-family-roboto;
+  border-radius: $border-radius-lg;
+  text-decoration: none;
+  color: inherit;
+  min-width: 185px;
+  letter-spacing: 1.5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @include transition-color;
+  &.btn-small {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+  &:hover {
+    background-color: $gray;
+    color: $white;
+    @include transition-color;
+    &:before {
+      opacity: 1;
+      left: -1px;
+      @include transition-easeout015;
+    }
+  }
+  &:before {
+    content: '';
+    @include wh-0;
+    opacity: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid $white;
+    border-right: 0 solid transparent;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include transition-width03;
+    margin-top: 0;
+    @include transition-easeout015;
+  }
+  &:disabled,
+  &.disabled {
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .h-btn {
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
+  }
+}
+.h-btn.h-btn-outline {
+  background-color: transparent;
+  border-color: $mediumgray;
+  color: $darkgray;
+  @include transition-color;
+  &:hover {
+    border-color: $lightgraylight-100;
+    @include transition-color;
+  }
+  &:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    border: 1px solid transparent;
+    border-top-color: inherit;
+    border-right-color: inherit;
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include transition-width03;
+    margin-top: -5px;
+    @include transition-easeout015;
+    transform: rotate(45deg);
+  }
+}
+.h-btn.h-btn-link {
+  color: $darkgray;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  @include transition-color;
+  i {
+    font-size: $font-size-base-xs;
+    padding: 0 0.3rem 0 0.3rem;
+    margin: 0;
+  }
+  &:hover,
+  &.active {
+    color: $black;
+    @include transition-color;
+    &:after,
+    &.active {
+      width: 100%;
+      @include transition-width03;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: $black;
+    @include transition-width03;
+  }
+  &:before {
+    display: none !important;
+  }
+}
+.h-btn-primary {
+  color: $white;
+  background-color: $mediumblue;
+  border-color: $mediumblue;
+  @include transition-color;
+  &:hover {
+    color: $white;
+    background-color: $lightblue;
+    border-color: $lightblue;
+    @include transition-color;
+  }
+  &:active,
+  &.active {
+    color: $white;
+    background-color: $darkblue;
+    border-color: $darkblue;
+    @include transition-color;
+  }
+  &:focus {
+    color: $white;
+    background-color: $darkblue;
+    border-color: $darkblue;
+    @include transition-color;
+  }
+}
+.h-btn-outline-primary {
+  color: $mediumblue;
+  background-color: transparent;
+  border-color: $mediumblue;
+  @include transition-color;
+  &.bg-outline-medium-blue {
+    &:before {
+      background-color: $mediumblue;
+    }
+  }
+  &.bg-outline-primary {
+    &:before {
+      background-color: $darkblue;
+    }
+  }
+  &:hover {
+    color: $mediumblue;
+    background-color: transparent;
+    border-color: $lightblue;
+    @include transition-color;
+    &:before {
+      opacity: 1;
+      left: -5px;
+    }
+  }
+  &:active {
+    color: $mediumblue;
+    background-color: transparent;
+    border-color: $darkblue;
+    @include transition-color;
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    color: $mediumblue;
+    background-color: transparent;
+    border-color: $darkblue;
+    @include transition-color;
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    border: 1px solid transparent;
+    border-top-color: inherit;
+    border-right-color: inherit;
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include transition-width03;
+    margin-top: -5px;
+    @include transition-easeout015;
+    transform: rotate(45deg);
+  }
+}
+.h-btn-outline-white {
+  color: $white;
+  background-color: transparent;
+  border-color: $white;
+  @include transition-color;
+  &.bg-outline-medium-blue {
+    &:before {
+      background-color: $mediumblue;
+    }
+  }
+  &.bg-outline-primary {
+    &:before {
+      background-color: $darkblue;
+    }
+  }
+  &:hover {
+    color: $white;
+    background-color: transparent;
+    border-color: $lightblue;
+    @include transition-color;
+    &:before {
+      opacity: 1;
+      left: -5px;
+    }
+  }
+  &:active {
+    color: $white;
+    background-color: transparent;
+    border-color: $darkblue;
+    @include transition-color;
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    color: $white;
+    background-color: transparent;
+    border-color: $lightblue;
+    @include transition-color;
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    border: 1px solid transparent;
+    border-top-color: inherit;
+    border-right-color: inherit;
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include transition-width03;
+    margin-top: -5px;
+    @include transition-easeout015;
+    transform: rotate(45deg);
+  }
+}
+.h-btn.h-btn-link-primary {
+  color: $mediumblue;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  min-width: auto;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  @include transition-color;
+  i {
+    font-size: $font-size-base-xs;
+    padding: 0 0.3rem 0 0.3rem;
+    margin: 0;
+  }
+  &:hover,
+  &.active {
+    color: $darkblue;
+    @include transition-color;
+    &:after,
+    &.active {
+      width: 100%;
+      @include transition-width03;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: $darkblue;
+    @include transition-width03;
+  }
+  &:before {
+    display: none !important;
+  }
+}
+.h-btn.h-btn-link-white {
+  color: $mediumblue;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  min-width: auto;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  @include transition-color;
+  i {
+    font-size: $font-size-base-xs;
+    padding: 0 0.3rem 0 0.3rem;
+    margin: 0;
+  }
+  &:hover,
+  &.active {
+    color: $white;
+    @include transition-color;
+    &:after,
+    &.active {
+      width: 100%;
+      @include transition-width03;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: $white;
+    @include transition-width03;
+  }
+  &:before {
+    display: none !important;
+  }
+}

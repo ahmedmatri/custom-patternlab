@@ -1,0 +1,135 @@
+/*======= entityTab css start here =======*/
+.entityTab {
+  nav {
+    width: auto;
+    display: inline-block;
+    .nav-tabs {
+      border-top: 1px solid $lightgraylight-200;
+      border-bottom: none;
+      border-radius: 0 6px 0 0;
+      .nav-link {
+        font-size: $font-size-base * 2;
+        padding: $font-size-base * 1.5 $font-size-base * 3;
+        color: rgba($darkblue, 20%);
+        font-family: $font-family-roboto-slab;
+        font-weight: bold;
+        border-color: $lightgraylight-200;
+        border-top: none;
+        border-left: none;
+        &.active {
+          color: $darkblue;
+          border-bottom: transparent;
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    nav {
+      @include w-100;
+      .nav-tabs {
+        border: none;
+        .nav-link {
+          @include w-100;
+          border-top: 1px solid $lightgraylight-200;
+          border-right: none;
+          border-radius: 0;
+          text-align: left;
+          font-size: $font-size-base * 1.5;
+          &.active {
+            &:hover,
+            &:focus {
+              border-top: 1px solid $lightgraylight-200;
+              border-radius: 0;
+              isolation: inherit;
+            }
+          }
+          &:hover {
+            border-top: 1px solid $lightgraylight-200;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.verticaltabs {
+  background: $white;
+  .verticaltabs__inner {
+    border: none;
+    border: 1px solid $lightgraylight-200;
+    border-left: none;
+    border-right: none;
+    .tab-links {
+      list-style-type: none;
+      @include pm-0;
+      background-color: $white;
+      button {
+        display: block;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid $lightgraylight-200;
+        background-color: $white;
+        display: block;
+        text-decoration: none;
+        padding: 1.2rem 3rem;
+        color: $darkblue;
+        @include transition-easeout02;
+        font-size: $font-size-base * 1.123;
+        font-family: $font-family-roboto-slab;
+        &:last-child {
+          border-bottom: none;
+        }
+        &.active {
+          background: $lightgraylight;
+          color: $mediumblue;
+        }
+      }
+    }
+    .inner_info {
+      padding: 20px;
+    }
+    @media (min-width: 991px) {
+      .tab-links {
+        width: 40%;
+      }
+    }
+    .tabcontainer {
+      background-color: $lightgraylight;
+      margin-top: 20px;
+      .verticaltabs__cont {
+        background: $lightgraylight;
+        padding: 0;
+        @media (min-width: 992px) {
+          .inner_info {
+            padding: 30px;
+          }
+        }
+      }
+    }
+    @media (min-width: 991px) {
+      .tabcontainer {
+        width: 60%;
+        margin-top: 0;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .verticaltabs__inner {
+      display: block !important;
+      .tab-links {
+        @include w-100;
+        button {
+          font-size: $font-size-base;
+        }
+        button.active {
+          background: rgba($darkblue, 80%);
+          color: $white;
+        }
+      }
+      .tabcontainer {
+        @include w-100;
+      }
+    }
+  }
+}
+/*======= entityTab css end here =======*/

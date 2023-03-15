@@ -1,1 +1,0 @@
-{"version":3,"sources":["assets/css/styles.scss","assets/css/styles.css"],"names":[],"mappings":"AAAA;EACE,WAAA;ACCF","file":"../../../components/assets/css/styles.css","sourcesContent":[".pl-c-viewport__iframe {\n  padding: 20;\n}\n",".pl-c-viewport__iframe {\n  padding: 20;\n}"]}

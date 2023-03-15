@@ -1,0 +1,64 @@
+.bg-muted {
+  background-color: $lightgray !important;
+}
+a.bg-muted:focus,
+a.bg-muted:hover {
+  background-color: $lightgray !important;
+}
+.bg-muted-light {
+  background-color: $lightgraylight !important;
+}
+a.bg-muted-light:focus,
+a.bg-muted-light:hover {
+  background-color: $lightgray !important;
+}
+.bg-primary {
+  background-color: $darkblue !important;
+}
+a.bg-primary:focus,
+a.bg-primary:hover {
+  background-color: $darkblue !important;
+}
+.bg-medium-blue {
+  background-color: $mediumblue !important;
+}
+a.bg-medium-blue:focus,
+a.bg-medium-blue:hover {
+  background-color: $mediumblue !important;
+}
+.bg-medium-blue-azure {
+  background-color: $vividbleu !important;
+}
+.bg-black {
+  background-color: $black !important;
+}
+.bg-black-light {
+  background-color: $darkgray !important;
+}
+.bg-white {
+  background-color: $white !important;
+}
+.text-muted {
+  color: $lightgray !important;
+}
+.text-muted-light {
+  color: $lightgraylight !important;
+}
+.text-primary {
+  color: $darkblue !important;
+}
+.text-medium-blue {
+  color: $mediumblue !important;
+}
+.text-medium-blue-azure {
+  color: $vividbleu !important;
+}
+.text-black {
+  color: $black !important;
+}
+.text-black-light {
+  color: $darkgray !important;
+}
+.text-white {
+  color: $white !important;
+}

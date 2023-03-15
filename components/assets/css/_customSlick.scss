@@ -1,0 +1,70 @@
+@import 'mixin';
+/*======= slick slider default css start here ======*/
+.slick-slider {
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
+    z-index: 5;
+    font-size: 0;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: $border-radius-circle;
+    @include transition-width03;
+    background: transparent;
+    &.slick-disabled {
+      cursor: default;
+      opacity: 0.5;
+    }
+    &:before {
+      content: '\f054';
+      display: inline-block;
+      font: normal normal normal 21px/1 FontAwesome;
+      width: 23px;
+      height: 19px;
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      @include transition-width03;
+    }
+    @media (max-width: 767px) {
+      &:before {
+        width: 15px;
+      }
+    }
+  }
+  .slick-prev {
+    left: -10px;
+    -webkit-transform: translate(0%, -50%) rotate(-180deg);
+    transform: translate(0%, -50%) rotate(-180deg);
+  }
+  .slick-next {
+    right: -10px;
+  }
+  @media (max-width: 1200px) {
+    .slick-arrow {
+      width: 52px;
+      height: 52px;
+    }
+  }
+  @media (max-width: 992px) {
+    .slick-arrow {
+      width: 42px;
+      height: 42px;
+    }
+  }
+  @media (max-width: 767px) {
+    .slick-arrow {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+/*======= slick slider default css end here ======*/

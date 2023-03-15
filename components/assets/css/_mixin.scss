@@ -1,0 +1,94 @@
+@mixin wh-0 {
+  width: 0;
+  height: 0;
+}
+@mixin pm-0 {
+  padding: 0;
+  margin: 0;
+}
+@mixin tl-0 {
+  top: 0;
+  left: 0;
+}
+@mixin lb-0 {
+  left: 0;
+  bottom: 0;
+}
+@mixin tr-0 {
+  top: 0;
+  right: 0;
+}
+@mixin tbl-0 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+@mixin tlr-0 {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@mixin lrb-0 {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@mixin trbl-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@mixin h-100 {
+  height: 100%;
+}
+@mixin w-100 {
+  width: 100%;
+}
+@mixin wh-100 {
+  width: 100%;
+  height: 100%;
+}
+@mixin border-0 {
+  border: none;
+}
+@mixin img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+@mixin transition-alleasy1 {
+  transition: all 1s ease;
+}
+@mixin transition-all05 {
+  transition: all 0.5s;
+}
+@mixin transition-easeout015 {
+  transition: 0.15s ease-in-out;
+}
+@mixin transition-easeout02 {
+  transition: all 0.2s ease-in-out;
+}
+@mixin transition-easeout035 {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+@mixin transition-width02 {
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+@mixin transition-width03 {
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+@mixin transition-height2 {
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+@mixin transition-height1 {
+  -webkit-transition: height 1s;
+  transition: height 1s;
+}
+@mixin transition-color {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

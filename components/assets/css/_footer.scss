@@ -1,0 +1,115 @@
+/*====== Footer Block css start here ======*/
+.footer {
+  .footer__block {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .footer__block--logo {
+      margin-bottom: 1.5rem;
+    }
+    .footer__block--info {
+      .contact-info {
+        margin-bottom: 1.5rem;
+        p {
+          font-size: $font-size-base * 0.75;
+          font-weight: $font-weight-normal;
+          padding: 0;
+          color: $lightblue;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .social-icon {
+        @include pm-0;
+        a {
+          color: $lightblue;
+          font-size: $font-size-base * 1.2;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .footer__block___links {
+      margin-bottom: 1.5rem;
+      ul {
+        @include pm-0;
+        li {
+          list-style: none;
+          margin-bottom: 0.5rem;
+          a {
+            color: $white;
+            font-size: $font-size-base * 0.75;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .footer__block {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+  }
+  .footer__btm {
+    border-top: 1px solid rgba($white, 20%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .footer__legal {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      p {
+        font-size: $font-size-base * 0.75;
+        font-weight: $font-weight-light;
+        @include pm-0;
+        color: $white;
+      }
+      @media (max-width: 640px) {
+        .mada_logo {
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          margin: 0 auto;
+        }
+      }
+      .nav-legal {
+        ul {
+          @include pm-0;
+          li {
+            display: inline-block;
+            position: relative;
+            a {
+              color: $white;
+              font-size: $font-size-base * 0.75;
+              cursor: pointer;
+              text-decoration: none;
+              font-weight: $font-weight-light;
+              padding-right: 10px;
+              margin-right: 10px;
+              border-right: 1px solid $white;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+            &:last-child a {
+              padding-right: 0;
+              margin-right: 0;
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .footer__btm {
+      padding-top: 1.875rem;
+      padding-bottom: 1.875rem;
+    }
+  }
+}
+/*====== Footer Block css end here ======*/
