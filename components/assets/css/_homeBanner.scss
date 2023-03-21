@@ -1,0 +1,186 @@
+@import 'mixin';
+.slider-home {
+  position: relative;
+  width: $full100;
+  height: inherit;
+  min-height: 8vw;
+  margin-bottom: 50px;
+  opacity: $opacity;
+  visibility: hidden;
+  user-select: inherit;
+  //visibility: visible;
+  transition: $transition-base102;
+  .slider__caption {
+    position: absolute;
+    top: 44%;
+    left: 5%;
+    text-align: center;
+    color: $white;
+    font-size: $font-size-base * 2.8;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.02em;
+    // opacity: $opacity;
+    z-index: 99;
+    transition: $transition-base103;
+    // transform: translateY(100px);
+  }
+  .slick-slide {
+    // @include backfaceVisibilityHidden;
+    position: relative;
+    height: 920px;
+    user-select: inherit;
+    &:before {
+      // @include backfaceVisibilityHidden;
+      background-color: $darkblue;
+      opacity: $opacity-30;
+      z-index: 1;
+      content: '';
+      position: absolute;
+      @include tl-0;
+      @include wh-100;
+    }
+    .slider-home__item {
+      display: none;
+      height: $full100;
+      video,
+      iframe {
+        width: $full100;
+      }
+      video {
+        display: block;
+        position: absolute;
+        top: $half50;
+        left: $half50;
+        min-width: $full100;
+        min-height: $full100;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+      }
+      iframe {
+        position: relative;
+        pointer-events: none;
+      }
+      figure {
+        position: relative;
+        height: $full100;
+        .slide-image {
+          opacity: $opacity;
+          height: $full100;
+          background-size: cover;
+          background-position: center;
+          transition: $transition-base08;
+          &.show {
+            opacity: $opacity-100;
+          }
+          .image-entity {
+            width: $full100;
+            opacity: $opacity;
+            visibility: hidden;
+          }
+        }
+      }
+      .loading {
+        position: absolute;
+        top: 44%;
+        left: 0;
+        width: $full100;
+      }
+    }
+    &.slick-active {
+      z-index: 1;
+      .slider-home__item {
+        display: inline-block;
+      }
+      .slide-media {
+        -webkit-animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+        animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+      }
+      .slider__caption {
+        opacity: $opacity-100;
+        transform: translateY(0);
+        transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+      }
+    }
+    .slide-media {
+      -webkit-animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+      animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+    }
+  }
+  &.slick-initialized {
+    opacity: $opacity-100;
+    visibility: visible;
+  }
+  .slick-dots {
+    text-align: center;
+    padding-top: 15px;
+    position: absolute;
+    bottom: 40px;
+    z-index: 13;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 8px;
+      button {
+        width: 16px;
+        height: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: $border-radius-50;
+        border: 2px solid $white;
+        box-shadow: 0 0 0 0 transparent;
+        vertical-align: middle;
+        color: $white;
+        background-color: $white;
+        transition: $transition-base03;
+        opacity: $opacity-40;
+        text-indent: -999999px;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          opacity: $opacity-100;
+        }
+      }
+      &.slick-active {
+        button {
+          border-color: $darkblue;
+          box-shadow: 0 0 0 2px $white;
+          opacity: $opacity-100;
+        }
+      }
+    }
+  }
+}
+@-webkit-keyframes slideIn {
+  from {
+    filter: blur(15px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    filter: blur(15px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+@-webkit-keyframes slideOut {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(15px);
+  }
+}
+@keyframes slideOut {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(15px);
+  }
+}

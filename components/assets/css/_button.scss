@@ -103,6 +103,7 @@
   background-color: transparent;
   padding: 0;
   margin: 0;
+  min-width: auto;
   text-transform: inherit;
   letter-spacing: inherit;
   @include transition-color;
