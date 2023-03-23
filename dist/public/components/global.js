@@ -139,10 +139,18 @@ window.addEventListener('load', () => {
       autoplaySpeed: 4000,
       lazyLoad: 'progressive',
       speed: 600,
-      arrows: false,
+      arrows: true,
       dots: true,
       autoplay: false,
       cssEase: 'cubic-bezier(0.87, 0.03, 0.41, 0.9)',
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            dots: false,
+          },
+        },
+      ],
     });
   });
   // Resize event

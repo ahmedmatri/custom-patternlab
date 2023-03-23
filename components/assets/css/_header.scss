@@ -115,6 +115,9 @@
     @media (max-width: 991px) {
       .justify-content-center {
         justify-content: space-between !important;
+        &.nav-global {
+          align-items: center;
+        }
       }
     }
     .logo {
@@ -269,6 +272,7 @@
         display: none;
         background-color: $white;
         height: 36px;
+        margin-left: 10px;
       }
       @media (max-width: 991px) {
         .nav-main-toggle {

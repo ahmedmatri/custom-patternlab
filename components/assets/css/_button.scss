@@ -99,9 +99,11 @@
   }
 }
 .h-btn.h-btn-link {
+  position: relative;
   color: $darkgray;
   background-color: transparent;
   padding: 0;
+  padding-right: 20px;
   margin: 0;
   min-width: auto;
   text-transform: inherit;
@@ -131,7 +133,18 @@
     @include transition-width03;
   }
   &:before {
-    display: none !important;
+    content: '\f061';
+    font-family: 'fontawesome';
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    opacity: 1;
+    right: 10px;
+    left: auto;
+    top: 50%;
+    line-height: 0;
   }
 }
 .h-btn-primary {
@@ -282,9 +295,11 @@
   }
 }
 .h-btn.h-btn-link-primary {
+  position: relative;
   color: $mediumblue;
   background-color: transparent;
   padding: 0;
+  padding-right: 20px;
   margin: 0;
   min-width: auto;
   text-transform: inherit;
@@ -314,13 +329,26 @@
     @include transition-width03;
   }
   &:before {
-    display: none !important;
+    content: '\f061';
+    font-family: 'fontawesome';
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    opacity: 1;
+    right: 10px;
+    left: auto;
+    top: 50%;
+    line-height: 0;
   }
 }
 .h-btn.h-btn-link-white {
+  position: relative;
   color: $mediumblue;
   background-color: transparent;
   padding: 0;
+  padding-right: 20px;
   margin: 0;
   min-width: auto;
   text-transform: inherit;
@@ -350,6 +378,17 @@
     @include transition-width03;
   }
   &:before {
-    display: none !important;
+    content: '\f061';
+    font-family: 'fontawesome';
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    opacity: 1;
+    right: 10px;
+    left: auto;
+    top: 50%;
+    line-height: 0;
   }
 }
