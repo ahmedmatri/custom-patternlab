@@ -2,8 +2,8 @@
   {% include 'organisms/Block/Header.twig' %}
   {% include 'organisms/Block/HomeBanner.twig' %}
   {% include 'organisms/Block/Entity.twig' %}
-  {% include 'organisms/Block/Events.twig' with { title : "Upcoming events"} %}
-  {% include 'organisms/Block/News.twig' with { title : "Upcoming news"} %}
+  {% include 'organisms/Block/Events.twig' with { title : "Upcoming events", link_viewmore : "View more"} %}
+  {% include 'organisms/Block/News.twig' with { title : "Upcoming news", link_viewmore : "View more"} %}
   {% include 'organisms/Block/Glance.twig' with {
     title: glance.title,
     description: glance.description,
