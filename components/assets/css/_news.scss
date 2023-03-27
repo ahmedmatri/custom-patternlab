@@ -22,52 +22,52 @@
       }
     }
   }
-  .newsList__item {
-    @include pm-0;
-    a {
-      @include pm-0;
-      text-decoration: none;
-      color: inherit;
-      .newsList__item--img {
-        margin-bottom: 1.9rem;
-      }
-      .newsList__item--tag {
-        color: $mediumblue;
-        font-size: $font-size-base * 0.6875;
-        padding: 0.3rem 0 0;
-        text-transform: uppercase;
-        font-family: $font-family-open-sans;
-      }
-      .newsList__item--entity {
-        font-size: $font-size-base * 0.9;
-        color: $darkblue;
-        padding: 0.1rem 0;
-        font-weight: $font-weight-light;
-        font-family: $font-family-open-sans;
-      }
-      .newsList__item--title {
-        font-size: $font-size-base * 1.3;
-        color: $darkblue;
-        padding: 0.3rem 0;
-        line-height: 1.4;
-      }
-      .newsList__item--date {
-        color: $darkgray-200;
-        font-size: $font-size-base * 0.6875;
-        font-family: $font-family-open-sans;
-      }
-      @media (max-width: 768px) {
-        .newsList__item--title {
-          font-size: $font-size-base;
-        }
-      }
-    }
-  }
   .slick-prev {
     left: -30px;
   }
   .slick-next {
     right: -30px;
+  }
+}
+.newsList__item {
+  @include pm-0;
+  a {
+    @include pm-0;
+    text-decoration: none;
+    color: inherit;
+    .newsList__item--img {
+      margin-bottom: 1.9rem;
+    }
+    .newsList__item--tag {
+      color: $mediumblue;
+      font-size: $font-size-base * 0.6875;
+      padding: 0.3rem 0 0;
+      text-transform: uppercase;
+      font-family: $font-family-open-sans;
+    }
+    .newsList__item--entity {
+      font-size: $font-size-base * 0.9;
+      color: $darkblue;
+      padding: 0.1rem 0;
+      font-weight: $font-weight-light;
+      font-family: $font-family-open-sans;
+    }
+    .newsList__item--title {
+      font-size: $font-size-base * 1.3;
+      color: $darkblue;
+      padding: 0.3rem 0;
+      line-height: 1.4;
+    }
+    .newsList__item--date {
+      color: $darkgray-200;
+      font-size: $font-size-base * 0.6875;
+      font-family: $font-family-open-sans;
+    }
+    @media (max-width: 768px) {
+      .newsList__item--title {
+        font-size: $font-size-base;
+      }
+    }
   }
 }
 /*====== News Block css start here ======*/

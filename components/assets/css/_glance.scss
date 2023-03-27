@@ -45,51 +45,55 @@
       display: grid;
       grid-template-columns: auto auto auto auto;
       grid-row-gap: 3rem;
-      .glance__list___item {
-        font-family: $font-family-roboto-slab;
-        .glance-number {
-          font-size: $font-size-base * 5.8;
-          font-weight: $font-weight-semibold;
-          color: $white;
-        }
-        .glance-name {
-          font-size: $font-size-base * 1.8;
-          font-family: $font-family-open-sans;
-          color: $white;
-        }
-      }
     }
     @media (max-width: 1200px) {
       .glance__list {
         grid-template-columns: auto auto auto;
         grid-row-gap: 3rem;
-        .glance__list___item {
-          .glance-number {
-            font-size: $font-size-base * 3;
-            text-align: center;
-          }
-          .glance-name {
-            font-size: $font-size-base;
-            text-align: center;
-          }
-        }
       }
     }
     @media (max-width: 768px) {
       .glance__list {
         grid-template-columns: auto auto;
         grid-row-gap: 3rem;
-        .glance__list___item {
-          .glance-number {
-            font-size: $font-size-base * 3;
-            text-align: center;
-          }
-          .glance-name {
-            font-size: $font-size-base;
-            text-align: center;
-          }
-        }
       }
+    }
+  }
+}
+.glance__list___item {
+  font-family: $font-family-roboto-slab;
+  .glance-number {
+    font-size: $font-size-base * 5.8;
+    font-weight: $font-weight-semibold;
+    color: $white;
+  }
+  .glance-name {
+    font-size: $font-size-base * 1.8;
+    font-family: $font-family-open-sans;
+    color: $white;
+  }
+}
+@media (max-width: 1200px) {
+  .glance__list___item {
+    .glance-number {
+      font-size: $font-size-base * 3;
+      text-align: center;
+    }
+    .glance-name {
+      font-size: $font-size-base;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .glance__list___item {
+    .glance-number {
+      font-size: $font-size-base * 3;
+      text-align: center;
+    }
+    .glance-name {
+      font-size: $font-size-base;
+      text-align: center;
     }
   }
 }
