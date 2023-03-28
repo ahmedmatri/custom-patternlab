@@ -304,6 +304,7 @@
   min-width: auto;
   text-transform: inherit;
   letter-spacing: inherit;
+  border-radius: 0;
   @include transition-color;
   i {
     font-size: $font-size-base-xs;
