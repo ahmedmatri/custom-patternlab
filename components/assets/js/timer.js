@@ -1,4 +1,4 @@
-$('#countdown')
+$('.countdown')
   .countdown('2024/10/10')
   .on('update.countdown', function (event) {
     var $this = $(this).html(
