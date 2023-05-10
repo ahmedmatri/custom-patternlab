@@ -1,4 +1,7 @@
-<section class="m-wrap section-glance" style="background-image:url('../../../images/library.jpg')">
+{% set bakcground = img ?: '../../../images/library.jpg' %}
+
+
+<section class="m-wrap section-glance" style="background-image:url({{ bakcground }})">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">

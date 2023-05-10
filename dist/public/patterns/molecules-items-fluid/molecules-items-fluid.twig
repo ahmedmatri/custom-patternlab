@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-6 ">
+        <div class="block-image">
+            {% if media %}
+                {{ media }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="block-info">
+                <h3> {{ title }}</h3>
+                {{ description }}
+                {{ link }}
+            </div>
+        </div>
+    </div>
+</div>

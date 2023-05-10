@@ -6,66 +6,79 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="footer__block--logo">
-                               {{footer.logo}}
+                                {{ logo ?:footer.logo }}
                             </div>
                         </div>
                         <div class="col-sm-6">
-                           <div class="footer__block--info">
+                            <div class="footer__block--info">
                                 <div class="contact-info">
-                                    <p>{{footer.footerAddress.infoNo}}</p>
-                                    <p>{{footer.footerAddress.hours}}</p>
-                                 </div>
-                                 <div class="social-icon">
+                                    {{ adress?:footer.footerAddress }}
+                                </div>
+                                <div class="social-icon">
                                     <ul class="list-inline">
-                                        <li class="list-inline-item"> <a href="#" tabindex="0"><i class="fa fa-instagram" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" tabindex="0"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li class="list-inline-item"> <a href="#" tabindex="0"><i class="fa fa-twitter" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item"> <a href="#" tabindex="0"><i class="fa fa-linkedin" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        
+                                        {% if social %}
+                                            {{ social }}
+                                        {% else %}
+                                            <li class="list-inline-item"><a href="#" tabindex="0"><i
+                                                            class="fa fa-instagram" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" tabindex="0"> <i class="fa fa-facebook"
+                                                                             aria-hidden="true"></i></a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#" tabindex="0"><i
+                                                            class="fa fa-twitter" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#" tabindex="0"><i
+                                                            class="fa fa-linkedin" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                        {% endif %}
+
                                     </ul>
                                 </div>
-                           </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-6 col-sm-4">
-                            <div class="footer__block___links">
-                                <ul>
-                                {% for link in footer.footerlink1 %}
-                                    <li> <a href="#">{{ link.link }}</a> </li>
-                                {% endfor %}
-                                
-                                </ul>
+                        {% if links %}
+                            {% for link in links %}
+                                {{ link }}
+
+                            {% endfor %}
+                        {% else %}
+                            <div class="col-6 col-sm-4">
+                                <div class="footer__block___links">
+                                    <ul>
+                                        {% for link in footer.footerlink1 %}
+                                            <li><a href="#">{{ link.link }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div class="footer__block___links">
-                                <ul>
-                                    {% for link in footer.footerlink2 %}
-                                        <li> <a href="#">{{link.link}}</a> </li>
-                                    {% endfor %}
-                                </ul>
+                            <div class="col-6 col-sm-4">
+                                <div class="footer__block___links">
+                                    <ul>
+                                        {% for link in footer.footerlink2 %}
+                                            <li><a href="#">{{ link.link }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div class="footer__block___links">
-                                <ul>
-                                    {% for link in footer.footerlink3 %}
-                                        <li> <a href="#">{{link.link}}</a> </li>
-                                    {% endfor %}
-                                </ul>
+                            <div class="col-6 col-sm-4">
+                                <div class="footer__block___links">
+                                    <ul>
+                                        {% for link in footer.footerlink3 %}
+                                            <li><a href="#">{{ link.link }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -76,28 +89,37 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="footer__legal">
-                      
-                         <p>Copyright ©2023 All rights reserved to Hamad Bin Khalifa University.</p>
-                      
+                        <p> {{ copyright ?:footer.copyright }}</p>
+
                         <div class="mada_logo">
-                            <a href="" title="Mada">
-                                <img width="37px" height="37px" src="https://www.hbku.edu.qa/sites/all/themes/hbku/images/mada.png" />
-                            </a>
+                            {{ mada?:footer.mada }}
                         </div>
-                       <div class="nav-legal">
+
+
+                        <div class="nav-legal">
                             <ul class="menu">
-                                <li class="first leaf">
-                                    <a href="#" title="">Emergency information</a>
-                                </li>
-                                <li class=" leaf">
-                                    <a href="#" title="">Disclaimer & copyright</a>
-                                </li>
-                                <li class=" leaf">
-                                    <a href="#" title="">Privacy</a>
-                                </li>
-                                <li class="last leaf">
-                                    <a href="#" title="">Site map</a>
-                                </li>
+                                {% if footer_link %}
+                                    {% for link in footer_link %}
+                                        {% set first = loop.first ? 'first': null %}
+                                        {% set class = loop.last ? 'last': first %}
+                                        <li class=" leaf {{ class }}">
+                                            {{ link }}
+                                        </li>
+                                    {% endfor %}
+                                {% else %}
+                                    <li class="first leaf">
+                                        <a href="#" title="">Emergency information</a>
+                                    </li>
+                                    <li class=" leaf">
+                                        <a href="#" title="">Disclaimer & copyright</a>
+                                    </li>
+                                    <li class=" leaf">
+                                        <a href="#" title="">Privacy</a>
+                                    </li>
+                                    <li class="last leaf">
+                                        <a href="#" title="">Site map</a>
+                                    </li>
+                                {% endif %}
                             </ul>
                         </div>
                     </div>

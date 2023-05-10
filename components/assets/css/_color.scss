@@ -26,6 +26,13 @@ a.bg-medium-blue:focus,
 a.bg-medium-blue:hover {
   background-color: $mediumblue !important;
 }
+.bg-light-blue {
+  background-color: $lightblue !important;
+}
+a.bg-light-blue:focus,
+a.bg-light-blue:hover {
+  background-color: $lightblue !important;
+}
 .bg-medium-blue-azure {
   background-color: $vividbleu !important;
 }
@@ -49,6 +56,9 @@ a.bg-medium-blue:hover {
 }
 .text-medium-blue {
   color: $mediumblue !important;
+}
+.text-light-blue {
+  color: $lightblue !important;
 }
 .text-medium-blue-azure {
   color: $vividbleu !important;

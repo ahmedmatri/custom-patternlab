@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   //Home Banner
-  let slideWrapper = $('.slider-home'),
+  var slideWrapper = $('.slider-home'),
     iframes = slideWrapper.find('.embed-player'),
     lazyImages = slideWrapper.find('.slide-image'),
     lazyCounter = 0;
@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
   }
   // When the slide is changing
   function playPauseVideo(slick, control) {
-    let currentSlide, slideType, startTime, player, video;
+    var currentSlide, slideType, startTime, player, video;
 
     currentSlide = slick.find('.slick-current .slider-home__item');
     slideType = currentSlide.attr('class').split(' ')[1];
@@ -85,7 +85,7 @@ window.addEventListener('load', () => {
       ratio = ratio || 16 / 9;
 
     iframes.each(function () {
-      let current = $(this);
+      var current = $(this);
       if (width / ratio < height) {
         playerWidth = Math.ceil(height * ratio);
         current
@@ -136,6 +136,7 @@ window.addEventListener('load', () => {
     //start the slider
     slideWrapper.slick({
       // fade:true,
+      dotsClass: 'slick-dots container',
       autoplaySpeed: 4000,
       lazyLoad: 'progressive',
       speed: 600,

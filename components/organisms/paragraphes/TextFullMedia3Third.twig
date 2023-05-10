@@ -1,0 +1,41 @@
+<section class="m-wrap {{ background }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2> {{ title }} </h2>
+                {{ description }}
+                {% if items %}
+                    <div class="row">
+                        {% for item in items %}
+                            <div class="col-md-{{ 12/items|length }}">
+                                {{ item }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% elseif not(paragraph) %}
+                    <div class="row">
+                        <div class="col-md-4">
+                            <figure class="figure">
+                                <img src="../../../images/gen.jpg" alt="" title="" class="img-fluid rounded mb-2"/>
+                                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-4">
+                            <figure class="figure">
+                                <img src="../../../images/gen.jpg" alt="" title="" class="img-fluid rounded mb-2"/>
+                                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-4">
+                            <figure class="figure">
+                                <img src="../../../images/gen.jpg" alt="" title="" class="img-fluid rounded mb-2"/>
+                                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</section>

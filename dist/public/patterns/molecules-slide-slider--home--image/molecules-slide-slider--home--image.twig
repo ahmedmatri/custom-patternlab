@@ -1,0 +1,27 @@
+<div class="slider-home__item image">
+    {# <span class="loading">Loading...</span> #}
+    <figure>
+        <div class="slide-image slide-media" style="background-image:url('{{ media }}');">
+            <img data-lazy="{{ media }}" class="image-entity"/>
+        </div>
+    </figure>
+    <div class="slider__caption">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="slider__detail">
+                        {% if title %}
+                            <h3>   {{ title }}</h3>
+                        {% endif %}
+                        {% if description %}
+                            {{ description }}
+                        {% endif %}
+                        {% if link %}
+                            {{ link }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

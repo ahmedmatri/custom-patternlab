@@ -4,21 +4,21 @@
       <div class="col-sm-12">
         <div class="focus-areas">
           <div class="pb-5 block-title">
-             <h2>{{title}}</h2>
-             <p>{{description}}</p>
+            <h2>{{ title }}</h2>
+            <p>{{ description }}</p>
           </div>
           <div class="focus-areas__list">
-                {% if items %}
+            {% if items %}
               {% for item in items %}
-                {{ items }}
+                {{ item }}
               {% endfor %}
             {% else %}
               {% for data in focus_area.datas %}
                 {% include 'molecules/cards/focusareas.twig' with {
-                    "image": data.image,
-                    "title" : data.title,
-                    "linkText" : "Learn more"
-            } %}
+                  "image": data.image,
+                  "title" : data.title,
+                  "linkText" : "Learn more"
+                } %}
               {% endfor %}
             {% endif %}
 

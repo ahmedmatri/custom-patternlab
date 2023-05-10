@@ -1,0 +1,22 @@
+<div class="slider-home__item homeCountDown">
+    <figure>
+        <div class="slide-image slide-media" style="background-image:url('{{ media }}');">
+            <img data-lazy="{{ media }}" class="image-entity"/>
+        </div>
+    </figure>
+    <div class="slider__caption">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    {% if date %}
+
+                        {% include '@molecules/cards/Timer.twig' with {"date" : date['#text']} %}
+                    {% endif %}
+                    {% if content %}
+                        {{ content }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

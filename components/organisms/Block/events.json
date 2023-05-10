@@ -1,4 +1,5 @@
 {
-  "title": "Upcoming Events",
-  "link_viewmore": "link View more"
+ "title": "Upcoming Events",
+ "link": "  <a href='#' type='button' class='h-btn h-btn-link-primary my-2'>View more</a>"
 }
+

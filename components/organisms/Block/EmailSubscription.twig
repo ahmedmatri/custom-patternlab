@@ -1,23 +1,28 @@
 <section class="m-wrap emailSub bg-medium-blue text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6" >
-                <div class="emailSub--title">
-                    <h3 class="text-white pl-4">Join Our Mailing List</h3>
-                    <p class="pb-0 mb-0 text-white">Stay up to date with our latest news and events</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <form class="row g-2 mt-2">
-                    <div class="col-sm-8 pe-4">
-                        <label for="emailSub" class="visually-hidden">Email</label>
-                        <input type="email" class="form-control" id="emailSub" placeholder="Your Email adress here" />
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="submit" class="h-btn btn-small h-btn-outline-white bg-outline-medium-blue">Subscribe</button>
-                    </div>
-                </form>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="emailSub--title">
+          <h3 class="text-white pl-4">{{ title }}t</h3>
+          <p class="pb-0 mb-0 text-white">{{ sub_title }}</p>
         </div>
+      </div>
+      <div class="col-lg-6">
+        {% if form %}
+          {{ form }}
+        {% else %}
+          <form class="row g-2 mt-2">
+            <div class="col-sm-8 pe-4">
+              <label for="emailSub" class="visually-hidden">Email</label>
+              <input type="email" class="form-control" id="emailSub" placeholder="Your Email adress here"/>
+            </div>
+            <div class="col-sm-4">
+              <button type="submit" class="h-btn btn-small h-btn-outline-white bg-outline-medium-blue">Subscribe
+              </button>
+            </div>
+          </form>
+        {% endif %}
+      </div>
     </div>
+  </div>
 </section>

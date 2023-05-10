@@ -1,2 +1,4 @@
-<span class="date">29 </span>
-<span class="montYear">AUGUST <i> 2022</i></span>
+<span class="date">{{ day }} </span>
+{% if not(same_month) or not(same_date) %}
+  <span class="montYear">{{ month }} <i> {{ year }}</i></span>
+{% endif %}

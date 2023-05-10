@@ -1,0 +1,33 @@
+<div class="slider-home__item video">
+  <video class="slide-video slide-media" loop muted preload="metadata" poster="../../../images/home-banner2.png">
+    <source
+      src="{{ media }}"
+      type="video/mp4"/>
+  </video>
+  <div class="slider__caption">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="slider__detail">
+            {% if title %}
+              <h3>   {{ title }}</h3>
+            {% else %}
+              <h3>Biomass and Environmental Biotechnology Futures for the GCC</h3>
+            {% endif %}
+            {% if description %}
+              {{ description }}
+            {% else %}
+              <p>HBKU showcases faculty and student research accomplishments</p>
+            {% endif %}
+
+            {% if link %}
+              {{ link }}
+            {% else %}
+              <a href="#" class="h-btn h-btn-link-primary">Read more</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

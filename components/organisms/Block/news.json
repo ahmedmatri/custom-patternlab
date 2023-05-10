@@ -1,4 +1,5 @@
 {
-  "title": "Upcoming news"
+  "title": "Upcoming news",
+  "link": "  <a href='#' type='button' class='h-btn h-btn-link-primary my-2'>View more</a>"
 }
 

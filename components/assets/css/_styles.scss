@@ -101,7 +101,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -256,18 +256,26 @@ input[type='search']::-webkit-search-decoration {
 }
 /*=== logo end here ====*/
 .wrapper {
-  padding-top: 85px;
+  .header {
+    background-color: transparent !important;
+    .header-wrap {
+      background-image: none !important;
+    }
+  }
 }
+// .wrapper {
+//   padding-top: 85px;
+// }
 // @media (min-width: 992px) {
 //   .wrapper {
 //     padding-top: 85px;
 //   }
 // }
-@media (min-width: 1200px) {
-  .wrapper {
-    padding-top: 105px;
-  }
-}
+// @media (min-width: 1200px) {
+//   .wrapper {
+//     padding-top: 105px;
+//   }
+// }
 .close-btn {
   width: 30px;
   height: 30px;
@@ -278,4 +286,74 @@ input[type='search']::-webkit-search-decoration {
   font-size: $font-size-base * 1.5;
   margin-bottom: 20px;
   color: $white;
+}
+
+/*=== list style css start here ===*/
+.square {
+  list-style-type: square;
+}
+/*=== list style css end here ===*/
+.user-logged-in .admin-controls {
+  background: #066cc1;
+  border-bottom: 5px solid #066cc1;
+  border-radius: 3px;
+  bottom: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: fixed;
+  right: 20px;
+  z-index: 9999;
+  font-size: 0.8235294118em;
+  display: block;
+}
+.user-logged-in .admin-controls ul {
+  margin: 0;
+  padding: 0;
+}
+.user-logged-in .admin-controls li {
+  float: left;
+  background-color: #ffffff;
+}
+.user-logged-in .admin-controls li a {
+  color: #066cc1;
+  display: block;
+  padding: 11px 15px;
+  border: none;
+  margin: 0;
+  height: auto;
+}
+.user-logged-in .admin-controls li a.active {
+  background: #066cc1;
+  color: #fff;
+  cursor: default;
+  border: none;
+}
+.user-logged-in .admin-controls li a.active:after {
+  display: none;
+}
+.user-logged-in .field-collection-view-links,
+.user-logged-in .action-links-field-collection-add {
+  display: block;
+}
+.user-logged-in .field-collection-view-links li,
+.user-logged-in .action-links-field-collection-add li {
+  background: #066cc1;
+  float: left;
+  margin-right: 2px;
+  margin-top: 0 !important;
+  text-align: center;
+}
+.user-logged-in .field-collection-view-links li a,
+.user-logged-in .action-links-field-collection-add li a {
+  color: #fff;
+  font-size: 0.8235294118em;
+  margin-right: 0 !important;
+  padding: 5px 10px;
+  float: left;
+}
+.user-logged-in .field-collection-view-links li a:hover,
+.user-logged-in .action-links-field-collection-add li a:hover {
+  background: #1e252b;
 }

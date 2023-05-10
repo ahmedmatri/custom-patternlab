@@ -1,0 +1,48 @@
+<section class="m-wrap {{ background }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>
+                    {{ title}}
+                </h2>
+                <h3 class="text-medium-blue"> {{ subtitle ?: 'Title Paragraph Text Full width (H3)' }}</h3>
+                {% if items %}
+                    <div class="row mt-5">
+                        {% for item in items %}
+                            <div class="col-md-{{ 12/items|length }}">
+                                {{ item }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% elseif not(paragraph) %}
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <h4 class="text-medium-blue">Sub Title (H4)</h4>
+                            <p>HBKU is committed to actively contribute to achieving the Qatar National Vision 2030 by
+                                building and cultivating human capacity through an enriching academic experience and an
+                                innovative research ecosystem. Through applying creativity to knowledge, students will
+                                have the opportunity to discover innovative solutions that are locally relevant and have
+                                a global impact.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-medium-blue">Sub Title (H4)</h4>
+                            <p>HBKU is committed to actively contribute to achieving the Qatar National Vision 2030 by
+                                building and cultivating human capacity through an enriching academic experience and an
+                                innovative research ecosystem. Through applying creativity to knowledge, students will
+                                have the opportunity to discover innovative solutions that are locally relevant and have
+                                a global impact.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="text-medium-blue">Sub Title (H4)</h4>
+                            <p>HBKU is committed to actively contribute to achieving the Qatar National Vision 2030 by
+                                building and cultivating human capacity through an enriching academic experience and an
+                                innovative research ecosystem. Through applying creativity to knowledge, students will
+                                have the opportunity to discover innovative solutions that are locally relevant and have
+                                a global impact.</p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

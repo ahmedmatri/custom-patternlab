@@ -1,0 +1,26 @@
+<section class="m-wrap {{ background }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    {{ title }}
+                </h2>
+                {{ description }}
+
+                {% if items %}
+                    <div class="modernSlider">
+                        {% for item in items %}
+                            {{ item }}
+                        {% endfor %}
+                    </div>
+                {% elseif not(paragraph) %}
+                    <div class="modernSlider">
+                        {% for item in 1..4 %}
+                            {% include 'atoms/images/ModernSliderItem.twig' %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

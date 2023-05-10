@@ -1,0 +1,20 @@
+<section class="m-wrap  {{ background }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>{{ title }}</h2>
+                {{ description }}
+
+                <figure class="figure w-100">
+                    {% if media %}
+                        {{ media }}
+                    {% elseif not(paragraph) %}
+                        <img src="../../../images/gen.jpg" alt="" title="" class="img-fluid rounded mb-2 w-100"/>
+                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                    {% endif %}
+                </figure>
+            </div>
+
+        </div>
+    </div>
+</section>

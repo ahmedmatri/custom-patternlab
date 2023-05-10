@@ -2,11 +2,16 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h1 class="pb-5">{{ title }} <a href="#" type="button" class="h-btn h-btn-link-primary float-end my-3">{{ link_viewmore }}</a></h1>
+      <div class="title_head pb-5">
+         <h1 class="">{{ title }}</h1>
+          {% if link %}
+            {{ link }}
+          {% endif %}
+      </div>
         <div class="newsList newsList__slide">
           {% if items %}
             {% for item in items %}
-              {{ items }}
+              {{ item }}
             {% endfor %}
           {% else %}
             {% for data in news.datas %}

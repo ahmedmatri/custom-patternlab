@@ -1,0 +1,46 @@
+<section class="m-wrap fullBlock {{ background }}">
+    <div class="container-fluid">
+        {% if items %}
+            {% for item in items %}
+                {{ item }}
+            {% endfor %}
+        {% elseif not(paragraph) %}
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="block-image">
+                        <img src="../../../images/precision-h1.jpg" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="block-info">
+                            <h3>Progressive Education</h3>
+                            <p class="text-primary">Innovatively re-imaging and transforming education to unlock the
+                                potential of learners and prepare them for the world of tomorrow by encouraging
+                                creativity and student agency.</p>
+                            <a href="#" class="h-btn h-btn-link-primary">Explore more </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="block-image">
+                        <img src="../../../images/precision-h.jpg" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="block-info">
+                            <h3>Progressive Education</h3>
+                            <p class="text-primary">Innovatively re-imaging and transforming education to unlock the
+                                potential of learners and prepare them for the world of tomorrow by encouraging
+                                creativity and student agency.</p>
+                            <a href="#" class="h-btn h-btn-link-primary">Explore more </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>

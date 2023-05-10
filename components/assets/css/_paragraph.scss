@@ -1,0 +1,188 @@
+.modernSlider {
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: $white;
+    border: 1px solid rgba($darkblue, 50%);
+    &:before {
+      font-size: $font-size-base;
+    }
+    &.slick-prev {
+      left: 10px;
+    }
+    &.slick-next {
+      right: 10px;
+    }
+  }
+}
+/*=== custom accordion css start here ===*/
+.accordion-custom {
+  .accordion-item {
+    border-color: rgba($mediumblue, 20%);
+    .accordion-button {
+      position: relative;
+      padding-left: 4rem;
+      font-size: 1.5rem;
+      color: $darkblue;
+      padding-top: 1.3rem;
+      padding-bottom: 1.3rem;
+      &:after {
+        content: '\f107';
+        font: normal normal normal 16px/1 FontAwesome;
+        position: absolute;
+        left: 0;
+        -webkit-transform-origin: left;
+        border: 2px solid $darkgray;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        background-image: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease-in-out;
+      }
+      &:not(.collapsed) {
+        background-color: transparent;
+        color: inherit;
+        box-shadow: none;
+        &::after {
+          transform: rotate(0);
+          content: '\f106';
+          color: $mediumblue;
+          border-color: $mediumblue;
+        }
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    &:first-child {
+      border-top: 1px solid rgba($mediumblue, 20%);
+    }
+    &:last-child {
+      border-bottom: 1px solid rgba($mediumblue, 20%);
+    }
+  }
+}
+/*=== custom accordion css end here ===*/
+/*=== custom image accordion css start here ===*/
+.accordion-bgImage {
+  .accordion-item {
+    position: relative;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    border-radius: 8px;
+    color: $white;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: $font-size-base * 1.2;
+    }
+    h2,
+    p {
+      color: $white;
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: $font-size-base * 1.5;
+      }
+    }
+    .accordion-header {
+      z-index: 2;
+      position: relative;
+    }
+    .accordion-button {
+      background: transparent;
+      font-size: $font-size-base * 1.2;
+      padding: 2rem 2rem;
+      color: inherit;
+      &:after {
+        content: '\f107';
+        font: normal normal normal 16px/1 FontAwesome;
+        background-image: none;
+        transform: none;
+      }
+      &:not(.collapsed) {
+        background-color: transparent;
+        color: inherit;
+        box-shadow: none;
+        &:after {
+          content: '\f106';
+        }
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: $font-size-base * 1.5;
+      }
+    }
+    .accordion-collapse {
+      padding: 0 2rem 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    .accordion-body {
+      padding: 0;
+      color: $white;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      inset: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(30, 22, 86, 0.7);
+      z-index: 0;
+      border-radius: 8px;
+    }
+    .h-btn-link-primary {
+      &:hover {
+        color: $white;
+      }
+      &:after {
+        background: $white;
+      }
+    }
+  }
+}
+/*=== custom image accordion css end here ===*/
+/*=== full blok css start here ===*/
+.fullBlock {
+  .col-md-6 {
+    padding: 0;
+  }
+  .block-info {
+    padding: 20px;
+    p {
+      font-family: $font-family-roboto;
+      font-weight: 300;
+    }
+  }
+  @media (min-width: 768px) {
+    .block-info {
+      padding: 20px 3rem;
+      p {
+        font-size: $font-size-base * 1.312;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .block-info {
+      padding: 20px 6rem;
+    }
+  }
+}
+/*====== full blok  css end here ======*/
+.table-darkblue {
+  background-color: $darkblue;
+  color: $white;
+}
